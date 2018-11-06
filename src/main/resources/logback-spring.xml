@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+    <logger name="org.springframework.web" level="INFO"/>
+    <logger name="org.springboot.sample" level="TRACE" />
+
+    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
+    <property name="LOG_HOME" value="D:/logs" />
+    <!-- 控制台打印日志的相关配置 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 日志格式 -->
+        <encoder>
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+        <!-- 日志级别过滤器 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 过滤的级别 -->
+            <level>info</level>
+            <!-- 匹配时的操作：接收 （记录） -->
+            <onMatch>ACCEPT</onMatch>
+            <!-- 不匹配时的操作：拒绝DENY（不记录）接受：ACCEPT（记录） -->
+            <onMismatch>ACCEPT</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- 文件保存日志的相关配置 -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 保存日志文件的路径 -->
+        <!--     <file>D:/logs/admin_info.log</file> -->
+        <file>D:/logs/admin_info.log</file>
+        <!-- 日志格式 -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%class:%line] - %m%n</pattern>
+        </encoder>
+        <!-- 日志级别过滤器 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 过滤的级别 -->
+            <level>INFO</level>
+            <!-- 匹配时的操作：接收（记录） -->
+            <onMatch>ACCEPT</onMatch>
+            <!-- 不匹配时的操作：拒绝（不记录） -->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!-- 循环政策：基于时间创建日志文件 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 日志文件名格式 -->
+            <fileNamePattern>D:/logs/admin_info.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- 最大保存时间：30天-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 保存日志文件的路径 -->
+        <!--     <file>D:/logs/admin_error.log</file> -->
+        <file>D:/logs/admin_error.log</file>
+        <!-- 日志格式 -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%class:%line] - %m%n</pattern>
+        </encoder>
+        <!-- 日志级别过滤器 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 过滤的级别 -->
+            <level>ERROR</level>
+            <!-- 匹配时的操作：接收（记录） -->
+            <onMatch>ACCEPT</onMatch>
+            <!-- 不匹配时的操作：拒绝（不记录） -->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!-- 循环政策：基于时间创建日志文件 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 日志文件名格式 -->
+            <!--       <fileNamePattern>e:/logs/admin_error.%d{yyyy-MM-dd}.log</fileNamePattern> -->
+            <fileNamePattern>D:/logs//admin_error.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- 最大保存时间：30天-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <!-- 开发、测试环境 -->
+    <springProfile name="dev,test">
+        <logger name="org.springframework.web" level="INFO"/>
+        <logger name="org.springboot.sample" level="INFO" />
+        <logger name="io.renren" level="DEBUG" />
+
+        <root level="DEBUG">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="file" />
+            <appender-ref ref="error" />
+        </root>
+    </springProfile>
+
+    <!-- 生产环境 -->
+    <springProfile name="prod">
+        <logger name="org.springframework.web" level="ERROR"/>
+        <logger name="org.springboot.sample" level="ERROR" />
+        <logger name="io.renren" level="ERROR" />
+
+        <root level="INFO">
+            <appender-ref ref="error" />
+        </root>
+    </springProfile>
+
+</configuration>
