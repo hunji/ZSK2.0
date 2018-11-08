@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eb8b47a-bdc4-4d73-8c2f-ed8f7ba8f7d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_1_12.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renren-fast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/controller/KnowledgeTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/controller/KnowledgeTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/KnowledgeTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/KnowledgeTypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/knowledge/KnowledgeContentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/knowledge/KnowledgeContentDao.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,20 +29,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KnowledgeContentDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml">
+      <file leaf-file-name="KnowledgeContentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state relative-caret-position="210">
+              <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+              <folding>
+                <element signature="method#sendBack#0;class#KnowledgeContentController#0" />
+                <element signature="method#search#0;class#KnowledgeContentController#0" />
+                <element signature="method#searchDetail#0;class#KnowledgeContentController#0" />
+                <element signature="method#titleForRemote#0;class#KnowledgeContentController#0" />
+                <element signature="method#addLikeSum#0;class#KnowledgeContentController#0" />
+                <element signature="method#titleForRemoteAutoComplete#0;class#KnowledgeContentController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="KnowledgeContentService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="176">
+              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KnowledgeContentServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+              <folding>
+                <element signature="method#review#0;class#KnowledgeContentServiceImpl#0" />
+                <element signature="method#sendback#0;class#KnowledgeContentServiceImpl#0" />
+                <element signature="method#getCountByType#0;class#KnowledgeContentServiceImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KnowledgeContentDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KnowledgeContentDao.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+              <folding>
+                <element signature="n#select#2;n#mapper#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,6 +114,9 @@
       <find>SearchServiceImpl</find>
       <find>ISearchService</find>
       <find>searchService</find>
+      <find>netty4</find>
+      <find>esClient</find>
+      <find>typename</find>
     </findStrings>
     <replaceStrings>
       <replace>io.renre</replace>
@@ -74,13 +128,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/ISearchService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/common/utils/Constant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/entity/LocalSysOssEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/dao/LocalSysOssDao.java" />
@@ -89,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/test/java/io/renren/common/utils/RedisUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/search/SearchServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/entity/SysOssEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/dao/SysOssDao.java" />
@@ -108,23 +157,28 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/SysRoleMenuDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserRoleDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserTokenDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/sysUserDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/common/utils/R.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/common/xss/XssFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/job/utils/ScheduleJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/swagger/index.yaml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/SysConfigDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/AbstractController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeThemeEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysMenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml" />
       </list>
     </option>
   </component>
@@ -144,13 +198,15 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="198" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="175" />
+    <option name="y" value="173" />
     <option name="width" value="1615" />
     <option name="height" value="815" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -188,7 +244,38 @@
               <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="renren" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="renren" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="renren" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -357,7 +444,9 @@
       <option name="presentableId" value="Default" />
       <updated>1541384674013</updated>
       <workItem from="1541384678163" duration="14235000" />
-      <workItem from="1541463888130" duration="16692000" />
+      <workItem from="1541463888130" duration="17592000" />
+      <workItem from="1541562867984" duration="10269000" />
+      <workItem from="1541637299172" duration="14525000" />
     </task>
     <servers />
   </component>
@@ -373,10 +462,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30927000" />
+    <option name="totallyTimeSpent" value="56621000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -384,35 +473,71 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32965517" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.16551724" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4723757" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32965517" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32872927" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35359117" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40469614" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1920573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20507812" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3462069" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39502764" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32965517" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22928177" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32965517" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32965517" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="BPMNPalette" order="5" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12630208" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39502764" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.16551724" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -430,147 +555,10 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/SysUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/SysLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/SysUserTokenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/config/ElasticSearchConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/5.0.7.RELEASE/spring-core-5.0.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.0.7.RELEASE/spring-aop-5.0.7.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8816">
-          <caret line="512" selection-start-line="512" selection-end-line="512" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="432" column="106" selection-start-line="432" selection-start-column="106" selection-end-line="432" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="570" selection-start-line="570" selection-end-line="570" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysUserTokenServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-          <folding>
-            <element signature="e#185#933#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/RenrenApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/utils/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/xss/XssFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.10.Final/hibernate-validator-6.0.10.Final.jar!/org/hibernate/validator/constraints/NotBlank.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeContentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/validator/group/AddGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/validator/group/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/validator/group/QcloudGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/validator/group/QiniuGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -589,16 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-133">
           <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,9 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7866">
           <caret line="427" column="17" lean-forward="true" selection-start-line="427" selection-start-column="17" selection-end-line="427" selection-end-column="17" />
-          <folding>
-            <element signature="e#5640#5648#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -698,87 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="e#270#526#0" />
-            <element signature="e#529#927#0" />
-            <element signature="e#931#1724#0" />
-            <element signature="e#962#983#0" />
-            <element signature="e#1011#1047#0" />
-            <element signature="e#1727#2174#0" />
-            <element signature="e#2177#2768#0" />
-            <element signature="e#2771#3177#0" />
-            <element signature="e#3180#3588#0" />
-            <element signature="e#3591#4001#0" />
-            <element signature="e#4004#4436#0" />
-            <element signature="e#4440#5230#0" />
-            <element signature="e#5233#5772#0" />
-            <element signature="e#5775#6363#0" />
-            <element signature="e#6366#6771#0" />
-            <element signature="e#6774#7181#0" />
-            <element signature="e#7184#7614#0" />
-            <element signature="e#7618#8295#0" />
-            <element signature="e#8298#8585#0" />
-            <element signature="e#8588#9160#0" />
-            <element signature="e#9163#9785#0" />
-            <element signature="e#9788#10193#0" />
-            <element signature="e#10196#10603#0" />
-            <element signature="e#10606#10955#0" />
-            <element signature="e#10959#11747#0" />
-            <element signature="e#11751#12540#0" />
-            <element signature="e#12543#13165#0" />
-            <element signature="e#13168#13573#0" />
-            <element signature="e#13576#13983#0" />
-            <element signature="e#13986#14418#0" />
-            <element signature="e#14422#15115#0" />
-            <element signature="e#15118#15612#0" />
-            <element signature="e#15615#16034#0" />
-            <element signature="e#16037#16458#0" />
-            <element signature="e#16461#16890#0" />
-            <element signature="e#16894#17706#0" />
-            <element signature="e#17709#18349#0" />
-            <element signature="e#18352#18765#0" />
-            <element signature="e#18768#19183#0" />
-            <element signature="e#19186#19624#0" />
-            <element signature="e#19627#20062#0" />
-            <element signature="e#20065#20502#0" />
-            <element signature="e#20505#20943#0" />
-            <element signature="e#20947#21769#0" />
-            <element signature="e#21772#22422#0" />
-            <element signature="e#22447#22651#0" />
-            <element signature="e#22654#23021#0" />
-            <element signature="e#23024#23310#0" />
-            <element signature="e#23313#23486#0" />
-            <element signature="e#23489#24267#0" />
-            <element signature="e#24270#24987#0" />
-            <element signature="e#24990#25646#0" />
-            <element signature="e#25650#26214#0" />
-            <element signature="e#26217#26934#0" />
-            <element signature="e#26937#27323#0" />
-            <element signature="e#27327#28146#0" />
-            <element signature="e#28149#28802#0" />
-            <element signature="e#28806#29414#0" />
-            <element signature="e#29417#30132#0" />
-            <element signature="e#30136#30440#0" />
-            <element signature="e#30443#31164#0" />
-            <element signature="e#31168#31442#0" />
-            <element signature="e#31445#32160#0" />
-            <element signature="e#32163#33668#0" />
-            <element signature="e#33671#33951#0" />
-            <element signature="e#33955#34602#0" />
-            <element signature="e#34605#35330#0" />
-            <element signature="e#35334#36088#0" />
-            <element signature="e#36091#36822#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,19 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="131" column="25" selection-start-line="131" selection-start-column="25" selection-end-line="131" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#upload#0;class#SysOssController#0" />
-            <element signature="method#uploadFileUpdate#0;class#SysOssController#0" />
-            <element signature="method#delete#0;class#SysOssController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -853,36 +734,218 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="247">
+          <caret line="16" column="70" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeContentEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        <state relative-caret-position="115">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeThemeEntity.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeTypeDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/entity/SysRoleEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="148" column="44" lean-forward="true" selection-start-line="148" selection-start-column="44" selection-end-line="148" selection-end-column="44" />
+        <state relative-caret-position="19">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="40" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/entity/SysMenuEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="321">
+          <caret line="85" column="29" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="85" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/SysMenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sys/sysUserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sys/SysMenuDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/dao/SysMenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysMenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+          <folding>
+            <element signature="e#1962#1963#0" expanded="true" />
+            <element signature="e#2014#2015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/mapper/Wrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/service/impl/ServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="398" column="19" selection-start-line="398" selection-start-column="19" selection-end-line="398" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="323">
+          <caret line="249" column="33" selection-start-line="249" selection-start-column="24" selection-end-line="249" selection-end-column="33" />
+          <folding>
+            <element signature="e#2152#2303#0" />
+            <element signature="e#2306#2433#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/SysMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="80" column="21" lean-forward="true" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+          <folding>
+            <element signature="method#delete#0;class#SysMenuController#0" />
+            <element signature="method#verifyForm#0;class#SysMenuController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#info#0;class#KnowledgeTypeController#0" />
+            <element signature="method#save#0;class#KnowledgeTypeController#0" />
+            <element signature="method#update#0;class#KnowledgeTypeController#0" />
+            <element signature="method#delete#0;class#KnowledgeTypeController#0" />
+            <element signature="method#select#0;class#KnowledgeTypeController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#queryPage#0;class#KnowledgeTypeServiceImpl#0" />
+            <element signature="method#queryAll#0;class#KnowledgeTypeServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+          <folding>
+            <element signature="method#sendBack#0;class#KnowledgeContentController#0" />
+            <element signature="method#search#0;class#KnowledgeContentController#0" />
+            <element signature="method#searchDetail#0;class#KnowledgeContentController#0" />
+            <element signature="method#titleForRemote#0;class#KnowledgeContentController#0" />
+            <element signature="method#addLikeSum#0;class#KnowledgeContentController#0" />
+            <element signature="method#titleForRemoteAutoComplete#0;class#KnowledgeContentController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+          <folding>
+            <element signature="method#review#0;class#KnowledgeContentServiceImpl#0" />
+            <element signature="method#sendback#0;class#KnowledgeContentServiceImpl#0" />
+            <element signature="method#getCountByType#0;class#KnowledgeContentServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="n#select#2;n#mapper#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -24,6 +24,12 @@ public interface KnowledgeTypeService extends IService<KnowledgeTypeEntity> {
      * @return
      */
     List<KnowledgeTypeEntity> queryAll();
+
+    /**
+     * 获取除了主题的所有类型数据
+     * @return
+     */
+    List<KnowledgeTypeEntity> queryAllButTheme();
     /**
      * 保存类型
      *
@@ -44,5 +50,18 @@ public interface KnowledgeTypeService extends IService<KnowledgeTypeEntity> {
      * @param ids
      */
     void deleteBatch(Long[] ids);
+
+    /**
+     * 查询ParentId指定下的类型列表
+     * @param parentId
+     * @return
+     */
+    List<KnowledgeTypeEntity> queryListParentId(Long parentId);
+
+    /**
+     * 删除实体
+     * @param ids
+     */
+    void deleteEntity(Long id);
 
 }

@@ -49,6 +49,7 @@ public class KnowledgeContentServiceImpl extends ServiceImpl<KnowledgeContentDao
     public PageUtils commonContentPage(Map<String, Object> params) {
         // 改成DTO给页面使用
         params.put("rstate", 1);
+        // 增加了根据类型查询；类型又分为了主题和类型两类
         return this.queryDTO(params);
     }
 

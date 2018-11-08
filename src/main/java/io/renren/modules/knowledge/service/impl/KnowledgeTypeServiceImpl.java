@@ -42,7 +42,15 @@ public class KnowledgeTypeServiceImpl extends ServiceImpl<KnowledgeTypeDao,Knowl
     @Override
     public List<KnowledgeTypeEntity> queryAll() {
         List<KnowledgeTypeEntity> list=this.selectList(
-                new EntityWrapper<>()
+                new EntityWrapper<KnowledgeTypeEntity>().orderBy("order_num")
+        );
+        return list;
+    }
+
+    @Override
+    public List<KnowledgeTypeEntity> queryAllButTheme() {
+        List<KnowledgeTypeEntity> list=this.selectList(
+                new EntityWrapper<KnowledgeTypeEntity>().ne("type",0).orderBy("order_num")
         );
         return list;
     }
@@ -65,4 +73,22 @@ public class KnowledgeTypeServiceImpl extends ServiceImpl<KnowledgeTypeDao,Knowl
         }
         this.deleteBatchIds(Arrays.asList(ids));
     }
+
+    @Override
+    public List<KnowledgeTypeEntity> queryListParentId(Long parentId) {
+        List<KnowledgeTypeEntity> list = this.selectList(
+                new EntityWrapper<KnowledgeTypeEntity>().eq("parent_id", parentId)
+        );
+        return list;
+    }
+
+    @Override
+    public void deleteEntity(Long id) {
+        int count=knowledgeContentService.getCountByType(new Long[]{id});
+        if(count>0){
+            throw new RRException("当前类型下有"+count+"个知识内容，请先删除内容");
+        }
+        this.deleteById(id);
+    }
+
 }

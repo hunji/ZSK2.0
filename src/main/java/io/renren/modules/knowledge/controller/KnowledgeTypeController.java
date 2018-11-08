@@ -1,7 +1,6 @@
 package io.renren.modules.knowledge.controller;
 
 import io.renren.common.annotation.SysLog;
-import io.renren.common.utils.PageUtils;
 import io.renren.common.utils.R;
 import io.renren.common.validator.ValidatorUtils;
 import io.renren.modules.knowledge.entity.KnowledgeTypeEntity;
@@ -12,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
-
 /**
  * @author hunji
  * @date 2018/11/6
@@ -26,10 +23,16 @@ public class KnowledgeTypeController extends AbstractController {
 
     @RequestMapping("/list")
     @RequiresPermissions("knowledge:type:list")
-    public R list(@RequestParam Map<String, Object> params){
-        //查询列表数据
-        PageUtils page=knowledgeTypeService.queryPage(params);
-        return R.ok().put("page", page);
+    public List<KnowledgeTypeEntity> list(){
+        //递归查询出主题下的所有分类
+        List<KnowledgeTypeEntity> knowledgeTypeList = knowledgeTypeService.queryAll();
+        for (KnowledgeTypeEntity knowledgeTypeEntity : knowledgeTypeList) {
+            KnowledgeTypeEntity parentEntity = knowledgeTypeService.selectById(knowledgeTypeEntity.getParentId());
+            if(parentEntity!=null){
+                knowledgeTypeEntity.setParentName(parentEntity.getTypeName());
+            }
+        }
+        return knowledgeTypeList;
     }
 
     /**
@@ -75,10 +78,17 @@ public class KnowledgeTypeController extends AbstractController {
      * 删除知识类型
      */
     @SysLog("删除知识类型")
-    @RequestMapping("/delete")
+    @PostMapping("/delete/{id}")
     @RequiresPermissions("knowledge:type:delete")
-    public R delete(@RequestBody Long[] ids){
-        knowledgeTypeService.deleteBatch(ids);
+    public R delete(@PathVariable Long id){
+
+        //判断是否有子类型
+        List<KnowledgeTypeEntity> list = knowledgeTypeService.queryListParentId(id);
+        if(list.size()>0){
+            return R.error("请先删除该类下的子类型");
+        }
+        knowledgeTypeService.deleteEntity(id);
+
 
         return R.ok();
     }
@@ -93,6 +103,31 @@ public class KnowledgeTypeController extends AbstractController {
         //查询列表数据
         List<KnowledgeTypeEntity> list=knowledgeTypeService.queryAll();
         return R.ok().put("allTypes", list);
+    }
+
+    /**
+     * 查找除了主题的所有类型信息
+     * @param params
+     * @return
+     */
+    @RequestMapping("/allInfobuttheme")
+    public R allInfobuttheme(){
+        //查询列表数据
+        List<KnowledgeTypeEntity> list=knowledgeTypeService.queryAllButTheme();
+        return R.ok().put("allTypes", list);
+    }
+
+    @GetMapping("/select")
+    public R select(){
+        List<KnowledgeTypeEntity> queryAll = knowledgeTypeService.queryAll();
+
+        //添加顶级菜单
+        KnowledgeTypeEntity root=new KnowledgeTypeEntity();
+        root.setTypeName("根节点");
+        root.setId(0L);
+        root.setParentId(-1L);
+        queryAll.add(root);
+        return R.ok().put("typeList", queryAll);
     }
 
 }
