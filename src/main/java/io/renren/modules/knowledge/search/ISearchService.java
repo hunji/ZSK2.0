@@ -1,6 +1,5 @@
 package io.renren.modules.knowledge.search;
-
-import io.renren.common.utils.PageUtils;
+import io.renren.modules.knowledge.dto.ESContentDTO;
 
 import java.util.Map;
 
@@ -27,5 +26,13 @@ public interface ISearchService {
      * @param params
      * @return
      */
-    PageUtils queryIndex(Map<String, Object> params);
+    ESContentDTO queryIndex(Map<String, Object> params);
+
+    /**
+     * es部分字段更新
+     * @param contentId
+     * @param jsonMap 如Map<String, Object> jsonMap = new HashMap<>();
+     * jsonMap.put("updated", new Date());
+     */
+    boolean updatePartial(String contentId,Map<String, Object> jsonMap);
 }

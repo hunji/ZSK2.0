@@ -41,4 +41,10 @@ public interface KnowledgeContentDao extends BaseMapper<KnowledgeContentEntity> 
      * @return
      */
     void addLikeSum(Long id);
+
+    /**
+     * 浏览数
+     * @param id
+     */
+    void addViewSum(Long id);
 }

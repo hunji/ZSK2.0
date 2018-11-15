@@ -15,6 +15,9 @@ public class KnoweledgeIndexTemplate {
     private String title;
     private String brief;
     private String content;
-    private Integer likeNum;
+    private Long likeNum;
     private Date reviewDate;
+    private Long viewNum;
+    private Long typeId;
+    private String userName;
 }

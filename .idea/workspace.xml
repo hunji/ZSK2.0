@@ -5,19 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eb8b47a-bdc4-4d73-8c2f-ed8f7ba8f7d4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_elasticsearch_rest_high_level_client_6_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_aggs_matrix_stats_client_6_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ESContentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/esindex/knoweledge_index_mapping.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/esindex/knoweledge_index_mapping_ik.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spullara_mustache_java_compiler_0_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_25_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_client_transport_6_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_lang_mustache_client_6_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_percolator_client_6_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_reindex_client_6_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_plugin_transport_netty4_client_6_3_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/common/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/common/utils/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/config/ElasticSearchConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/config/ElasticSearchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeContentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeContentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/ISearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/ISearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/controller/KnowledgeTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/controller/KnowledgeTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/KnowledgeTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/KnowledgeTypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/renren/JwtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/renren/JwtTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/search/SearchServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/search/SearchServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/common/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/common/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/config/ElasticSearchConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/config/ElasticSearchConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/controller/KnowledgeContentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/controller/KnowledgeContentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/dto/ContentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/dto/ContentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/entity/KnowledgeContentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/entity/KnowledgeContentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/ISearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/ISearchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/KnoweledgeIndexKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/KnoweledgeIndexKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/SearchServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/search/SearchServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/knowledge/KnowledgeContentDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/knowledge/KnowledgeContentDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/renren/JwtTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/renren/JwtTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/renren/modules/knowledge/search/SearchServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/renren/modules/knowledge/search/SearchServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,15 +68,26 @@
       <file leaf-file-name="KnowledgeContentController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+            <state relative-caret-position="178">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
               <folding>
-                <element signature="method#sendBack#0;class#KnowledgeContentController#0" />
-                <element signature="method#search#0;class#KnowledgeContentController#0" />
+                <element signature="method#save#0;class#KnowledgeContentController#0" />
+                <element signature="method#update#0;class#KnowledgeContentController#0" />
+                <element signature="method#delete#0;class#KnowledgeContentController#0" />
+                <element signature="method#review#0;class#KnowledgeContentController#0" />
                 <element signature="method#searchDetail#0;class#KnowledgeContentController#0" />
-                <element signature="method#titleForRemote#0;class#KnowledgeContentController#0" />
-                <element signature="method#addLikeSum#0;class#KnowledgeContentController#0" />
-                <element signature="method#titleForRemoteAutoComplete#0;class#KnowledgeContentController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISearchService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/ISearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,42 +96,26 @@
       <file leaf-file-name="KnowledgeContentService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            <state relative-caret-position="389">
+              <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KnowledgeContentServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KnowledgeContentServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+            <state relative-caret-position="-242">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
               <folding>
+                <element signature="method#queryPage#0;class#KnowledgeContentServiceImpl#0" />
+                <element signature="method#commonContentPage#0;class#KnowledgeContentServiceImpl#0" />
                 <element signature="method#review#0;class#KnowledgeContentServiceImpl#0" />
                 <element signature="method#sendback#0;class#KnowledgeContentServiceImpl#0" />
                 <element signature="method#getCountByType#0;class#KnowledgeContentServiceImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KnowledgeContentDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KnowledgeContentDao.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-              <folding>
-                <element signature="n#select#2;n#mapper#0;n#!!top" />
+                <element signature="method#queryDTO#0;class#KnowledgeContentServiceImpl#0" />
+                <element signature="method#addLikeSum#0;class#KnowledgeContentServiceImpl#0" />
+                <element signature="method#addViewSum#0;class#KnowledgeContentServiceImpl#0" />
               </folding>
             </state>
           </provider>
@@ -103,7 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jackson</find>
       <find>Shared</find>
       <find>hunji.youhualife</find>
       <find>io.renre</find>
@@ -117,6 +147,23 @@
       <find>netty4</find>
       <find>esClient</find>
       <find>typename</find>
+      <find>fasterxml</find>
+      <find>jackson</find>
+      <find>update</find>
+      <find>queryIndex</find>
+      <find>redis.open</find>
+      <find>RedisAspect</find>
+      <find>redis</find>
+      <find>SearchRequest</find>
+      <find>search</find>
+      <find>lt</find>
+      <find>common</find>
+      <find>create</find>
+      <find>SimpleDateFormat</find>
+      <find>username</find>
+      <find>switch</find>
+      <find>ScheduleStatus</find>
+      <find>addLikeSum</find>
     </findStrings>
     <replaceStrings>
       <replace>io.renre</replace>
@@ -128,24 +175,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/common/utils/Constant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/entity/LocalSysOssEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/dao/LocalSysOssDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/service/LocalSysOssService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/service/impl/LocalSysOssServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/renren/common/utils/RedisUtilsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/search/SearchServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/entity/SysOssEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/dao/SysOssDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/service/SysOssService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/service/impl/SysOssServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/oss/controller/SysOssController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/config/ElasticSearchConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/app/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/job/ScheduleJobDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/job/ScheduleJobLogDao.xml" />
@@ -158,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserRoleDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/SysUserTokenDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/sysUserDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/common/utils/R.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/common/xss/XssFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/job/utils/ScheduleJob.java" />
@@ -166,19 +198,34 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/swagger/index.yaml" />
         <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sys/SysConfigDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/config/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/AbstractController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeThemeEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysMenuServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/config/ElasticSearchConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ESContentDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeContentEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/search/SearchServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/esindex/knoweledge_index_mapping_ik.json" />
+        <option value="$PROJECT_DIR$/src/test/java/io/renren/JwtTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/common/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/ISearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -198,9 +245,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="175" />
-    <option name="y" value="173" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-145" />
+    <option name="y" value="245" />
     <option name="width" value="1615" />
     <option name="height" value="815" />
   </component>
@@ -212,8 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,7 +310,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
               <item name="renren" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
@@ -274,14 +320,77 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
               <item name="renren" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="esindex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren-fast" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren-fast" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="renren" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,6 +420,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\TM\RenRen\renren-fast\src\main\resources\esindex" />
       <recent name="F:\TM\RenRen\renren-fast\src\main\resources" />
     </key>
   </component>
@@ -329,6 +439,29 @@
   <component name="RunManager" selected="Spring Boot.RenrenApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="JwtTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="renren-fast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.renren.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.renren" />
+      <option name="MAIN_CLASS_NAME" value="io.renren.JwtTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="KnowledgeContentServiceImplTest.queryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="renren-fast" />
@@ -353,19 +486,65 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="KnowledgeTypeServiceImplTest.queryPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceImplTest.index" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="renren-fast" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.renren.modules.knowledge.service.impl.*" />
+          <option name="PATTERN" value="io.renren.modules.knowledge.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.renren.modules.knowledge.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="io.renren.modules.knowledge.service.impl.KnowledgeTypeServiceImplTest" />
-      <option name="METHOD_NAME" value="queryPage" />
+      <option name="PACKAGE_NAME" value="io.renren.modules.knowledge.search" />
+      <option name="MAIN_CLASS_NAME" value="io.renren.modules.knowledge.search.SearchServiceImplTest" />
+      <option name="METHOD_NAME" value="index" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SearchServiceImplTest.mutiSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="renren-fast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.renren.modules.knowledge.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.renren.modules.knowledge.search" />
+      <option name="MAIN_CLASS_NAME" value="io.renren.modules.knowledge.search.SearchServiceImplTest" />
+      <option name="METHOD_NAME" value="mutiSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SearchServiceImplTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="renren-fast" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.renren.modules.knowledge.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.renren.modules.knowledge.search" />
+      <option name="MAIN_CLASS_NAME" value="io.renren.modules.knowledge.search.SearchServiceImplTest" />
+      <option name="METHOD_NAME" value="remove" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -423,13 +602,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.RenrenApplication" />
-      <item itemvalue="JUnit.KnowledgeTypeServiceImplTest.queryPage" />
       <item itemvalue="JUnit.KnowledgeContentServiceImplTest.queryPage" />
+      <item itemvalue="JUnit.SearchServiceImplTest.mutiSearch" />
+      <item itemvalue="JUnit.SearchServiceImplTest.index" />
+      <item itemvalue="JUnit.SearchServiceImplTest.remove" />
+      <item itemvalue="JUnit.JwtTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JwtTest.test" />
+        <item itemvalue="JUnit.SearchServiceImplTest.index" />
+        <item itemvalue="JUnit.SearchServiceImplTest.remove" />
+        <item itemvalue="JUnit.SearchServiceImplTest.mutiSearch" />
         <item itemvalue="JUnit.KnowledgeContentServiceImplTest.queryPage" />
-        <item itemvalue="JUnit.KnowledgeTypeServiceImplTest.queryPage" />
       </list>
     </recent_temporary>
   </component>
@@ -446,26 +631,56 @@
       <workItem from="1541384678163" duration="14235000" />
       <workItem from="1541463888130" duration="17592000" />
       <workItem from="1541562867984" duration="10269000" />
-      <workItem from="1541637299172" duration="14525000" />
+      <workItem from="1541637299172" duration="16301000" />
+      <workItem from="1541669426487" duration="712000" />
+      <workItem from="1541724835751" duration="7562000" />
+      <workItem from="1541747526194" duration="6706000" />
+      <workItem from="1541983034326" duration="7254000" />
+      <workItem from="1541992092247" duration="7149000" />
+      <workItem from="1542071853487" duration="13093000" />
+      <workItem from="1542156215857" duration="21383000" />
+      <workItem from="1542243881117" duration="4423000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KnowledgeTypeServiceImplTest_queryPage - 2018.11.05 at 11h 48m 22s.xml">
-      <configuration name="KnowledgeTypeServiceImplTest.queryPage" configurationId="JUnit" />
+    <history-entry file="SearchServiceImplTest_mutiSearch - 2018.11.13 at 16h 48m 52s.xml">
+      <configuration name="SearchServiceImplTest.mutiSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KnowledgeTypeServiceImplTest_queryPage - 2018.11.05 at 11h 54m 09s.xml">
-      <configuration name="KnowledgeTypeServiceImplTest.queryPage" configurationId="JUnit" />
+    <history-entry file="SearchServiceImplTest_mutiSearch - 2018.11.13 at 17h 05m 03s.xml">
+      <configuration name="SearchServiceImplTest.mutiSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KnowledgeContentServiceImplTest_queryPage - 2018.11.05 at 11h 58m 44s.xml">
-      <configuration name="KnowledgeContentServiceImplTest.queryPage" configurationId="JUnit" />
+    <history-entry file="SearchServiceImplTest_mutiSearch - 2018.11.13 at 17h 06m 26s.xml">
+      <configuration name="SearchServiceImplTest.mutiSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_mutiSearch - 2018.11.13 at 17h 24m 33s.xml">
+      <configuration name="SearchServiceImplTest.mutiSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_remove - 2018.11.14 at 16h 03m 47s.xml">
+      <configuration name="SearchServiceImplTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_remove - 2018.11.14 at 16h 17m 55s.xml">
+      <configuration name="SearchServiceImplTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_remove - 2018.11.14 at 16h 21m 30s.xml">
+      <configuration name="SearchServiceImplTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_index - 2018.11.14 at 16h 35m 03s.xml">
+      <configuration name="SearchServiceImplTest.index" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_test - 2018.11.14 at 17h 21m 12s.xml">
+      <configuration name="JwtTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JwtTest_test - 2018.11.14 at 17h 25m 30s.xml">
+      <configuration name="JwtTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56621000" />
+    <option name="totallyTimeSpent" value="126679000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -477,18 +692,18 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4723757" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30801105" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32872927" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.27486187" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40469614" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16988951" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20507812" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20247395" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -496,7 +711,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.39502764" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4019337" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -507,7 +722,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22928177" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29834256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -518,7 +733,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32965517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32965517" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.27486187" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="BPMNPalette" order="5" />
@@ -526,7 +741,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12630208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22591145" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="7" side_tool="true" />
@@ -534,9 +749,9 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.39502764" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.17679559" />
       <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.16551724" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.63812155" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,51 +762,289 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysUserTokenServiceImpl.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="16" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/validator/group/QiniuGroup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="86">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/validator/group/UpdateGroup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/esindex/knoweledge_index_mapping.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4465">
+          <caret line="242" column="47" selection-start-line="242" selection-start-column="47" selection-end-line="242" selection-end-column="47" />
+          <folding>
+            <element signature="e#2152#2303#0" />
+            <element signature="e#2306#2433#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar!/com/fasterxml/jackson/core/JsonProcessingException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/action/delete/DeleteRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/2.0.8.RELEASE/spring-data-redis-2.0.8.RELEASE.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/config/ElasticSearchConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="57" column="6" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/SysMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-993">
+          <caret line="80" column="21" lean-forward="true" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/SysConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="62" column="55" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysConfigServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/aspect/SysLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="28" />
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#944#1883#0" />
+            <element signature="e#1885#2124#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/entity/SysUserEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="45" />
+        <state relative-caret-position="988">
+          <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/job/utils/ScheduleJob.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/annotation/SysLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/datasources/aspect/DataSourceAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/redis/SysConfigRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/aspect/RedisAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="25" />
+          <folding>
+            <element signature="method#around#0;class#RedisAspect#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/utils/RedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/index/query/QueryBuilders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="103" column="30" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.3.2/elasticsearch-rest-high-level-client-6.3.2.jar!/org/elasticsearch/client/RestHighLevelClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="218" column="32" selection-start-line="218" selection-start-column="32" selection-end-line="218" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/search/SearchHits.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/elasticsearch/elasticsearch-core/6.3.2/elasticsearch-core-6.3.2.jar!/org/elasticsearch/common/unit/TimeValue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/utils/PageUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ESContentDTO" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="121" column="38" lean-forward="true" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/search/builder/SearchSourceBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <caret line="274" column="31" selection-start-line="274" selection-start-column="31" selection-end-line="274" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2462">
+          <caret line="383" column="5" lean-forward="true" selection-start-line="383" selection-start-column="5" selection-end-line="383" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ESContentDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeContentEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/renren/modules/knowledge/search/SearchServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/utils/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="437">
+          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
           <folding>
+            <element signature="docComment;class#MenuType#0;class#Constant#0" />
             <element signature="class#MenuType#0;class#Constant#0" />
             <element signature="class#ScheduleStatus#0;class#Constant#0" />
             <element signature="class#CloudService#0;class#Constant#0" />
@@ -599,226 +1052,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/datasources/DynamicDataSource.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/elasticsearch/elasticsearch/6.3.2/elasticsearch-6.3.2.jar!/org/elasticsearch/index/query/RangeQueryBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="150">
+          <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/validator/Assert.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/renren/JwtTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="179">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysRoleMenuServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/KnoweledgeIndexTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="361">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysRoleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/utils/DateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="57" column="49" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/common/xss/HTMLFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7866">
-          <caret line="427" column="17" lean-forward="true" selection-start-line="427" selection-start-column="17" selection-end-line="427" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="190">
-            <caret line="79" column="64" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="64" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring-bak.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/swagger/swagger-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-538402">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/swagger/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/swagger/o2c.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/swagger/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/oss/entity/SysOssEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OSS/SysOssDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sys/SysConfigDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-751">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="243">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="35" />
           <folding>
-            <element signature="n#filter#0;n#appender#0;n#configuration#0;n#!!top" />
-            <element signature="n#appender#2;n#configuration#0;n#!!top" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="522">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/oss/controller/SysOssController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="131" column="25" selection-start-line="131" selection-start-column="25" selection-end-line="131" selection-end-column="25" />
+        <state relative-caret-position="522">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/AbstractController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/esindex/knoweledge_index_mapping_ik.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="299">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dto/ContentDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/ISearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="70" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeContentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeThemeEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeTypeDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/entity/SysRoleEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="40" column="7" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="40" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/entity/SysMenuEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="85" column="29" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="85" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/SysMenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sys/sysUserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/sys/SysMenuDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/dao/SysMenuDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/service/impl/SysMenuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-          <folding>
-            <element signature="e#1962#1963#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/mapper/Wrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/service/impl/ServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="398" column="19" selection-start-line="398" selection-start-column="19" selection-end-line="398" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/entity/KnowledgeTypeEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="522">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -827,124 +1119,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/search/SearchServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="249" column="33" selection-start-line="249" selection-start-column="24" selection-end-line="249" selection-end-column="33" />
-          <folding>
-            <element signature="e#2152#2303#0" />
-            <element signature="e#2306#2433#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/sys/controller/SysMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="80" column="21" lean-forward="true" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
-          <folding>
-            <element signature="method#delete#0;class#SysMenuController#0" />
-            <element signature="method#verifyForm#0;class#SysMenuController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/service/IService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        <state relative-caret-position="1510">
+          <caret line="333" column="80" selection-start-line="333" selection-start-column="80" selection-end-line="333" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#index#0;class#SearchServiceImpl#0" />
+            <element signature="method#remove#0;class#SearchServiceImpl#0" />
+            <element signature="method#create#0;class#SearchServiceImpl#0" />
+            <element signature="method#update#0;class#SearchServiceImpl#0" />
+            <element signature="method#deleteAndCreate#0;class#SearchServiceImpl#0" />
+            <element signature="e#7626#7644#0" />
+            <element signature="e#8316#8331#0" />
+            <element signature="e#11278#11301#0" />
+            <element signature="method#updatePartial#0;class#SearchServiceImpl#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#info#0;class#KnowledgeTypeController#0" />
-            <element signature="method#save#0;class#KnowledgeTypeController#0" />
-            <element signature="method#update#0;class#KnowledgeTypeController#0" />
-            <element signature="method#delete#0;class#KnowledgeTypeController#0" />
-            <element signature="method#select#0;class#KnowledgeTypeController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeTypeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="52" column="33" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#queryPage#0;class#KnowledgeTypeServiceImpl#0" />
-            <element signature="method#queryAll#0;class#KnowledgeTypeServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/dao/KnowledgeContentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/controller/KnowledgeContentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+        <state relative-caret-position="178">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
           <folding>
-            <element signature="method#sendBack#0;class#KnowledgeContentController#0" />
-            <element signature="method#search#0;class#KnowledgeContentController#0" />
+            <element signature="method#save#0;class#KnowledgeContentController#0" />
+            <element signature="method#update#0;class#KnowledgeContentController#0" />
+            <element signature="method#delete#0;class#KnowledgeContentController#0" />
+            <element signature="method#review#0;class#KnowledgeContentController#0" />
             <element signature="method#searchDetail#0;class#KnowledgeContentController#0" />
-            <element signature="method#titleForRemote#0;class#KnowledgeContentController#0" />
-            <element signature="method#addLikeSum#0;class#KnowledgeContentController#0" />
-            <element signature="method#titleForRemoteAutoComplete#0;class#KnowledgeContentController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/KnowledgeContentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="95" column="9" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/renren/modules/knowledge/service/impl/KnowledgeContentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+        <state relative-caret-position="-242">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
           <folding>
+            <element signature="method#queryPage#0;class#KnowledgeContentServiceImpl#0" />
+            <element signature="method#commonContentPage#0;class#KnowledgeContentServiceImpl#0" />
             <element signature="method#review#0;class#KnowledgeContentServiceImpl#0" />
             <element signature="method#sendback#0;class#KnowledgeContentServiceImpl#0" />
             <element signature="method#getCountByType#0;class#KnowledgeContentServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowledge/KnowledgeContentDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="n#select#2;n#mapper#0;n#!!top" />
+            <element signature="method#queryDTO#0;class#KnowledgeContentServiceImpl#0" />
+            <element signature="method#addLikeSum#0;class#KnowledgeContentServiceImpl#0" />
+            <element signature="method#addViewSum#0;class#KnowledgeContentServiceImpl#0" />
           </folding>
         </state>
       </provider>

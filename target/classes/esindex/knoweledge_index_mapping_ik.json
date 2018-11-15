@@ -1,0 +1,56 @@
+{
+
+  "settings":{
+
+    "number_of_replicas":0
+
+  },
+
+  "mappings":{
+
+    "knoweledge":{
+
+      "properties":{
+
+        "id":{
+          "type":"integer"
+        },
+        "title":{
+          "type":     "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "brief":{
+          "type":     "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+        },
+        "content":{
+          "type":     "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word"
+
+        },
+        "reviewDate":{
+          "type":"date",
+          "format":"yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "likeNum":{
+          "type":"integer"
+        },
+        "viewNum":{
+          "type":"integer"
+        },
+        "typeId":{
+          "type":"integer"
+        },
+        "userName":{
+          "type":     "text"
+        }
+      }
+
+    }
+
+  }
+
+}

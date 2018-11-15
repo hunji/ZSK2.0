@@ -89,4 +89,10 @@ public interface KnowledgeContentService  extends IService<KnowledgeContentEntit
      */
     void addLikeSum(Long id);
 
+    /**
+     * 知识库内容浏览后
+     * @param id
+     */
+    void addViewSum(Long id);
+
 }

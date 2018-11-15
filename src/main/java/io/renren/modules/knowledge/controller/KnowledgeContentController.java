@@ -4,6 +4,7 @@ import io.renren.common.annotation.SysLog;
 import io.renren.common.utils.PageUtils;
 import io.renren.common.utils.R;
 import io.renren.common.validator.ValidatorUtils;
+import io.renren.modules.knowledge.dto.ESContentDTO;
 import io.renren.modules.knowledge.entity.KnowledgeContentEntity;
 import io.renren.modules.knowledge.search.ISearchService;
 import io.renren.modules.knowledge.service.KnowledgeContentService;
@@ -56,6 +57,8 @@ public class KnowledgeContentController extends AbstractController {
     public R info(@PathVariable("id") Long id) {
         KnowledgeContentEntity knowledgeContentEntity = contentService.selectById(id);
 
+        //浏览数增加的操作；增加后同步到es中
+        contentService.addViewSum(id);
         return R.ok().put("knowledgeContent", knowledgeContentEntity);
     }
 
@@ -68,7 +71,7 @@ public class KnowledgeContentController extends AbstractController {
         knowledgeContentEntity.setCreateDate(new Date());
         knowledgeContentEntity.setUserId(this.getUserId());
         knowledgeContentEntity.setRstate(0);
-        knowledgeContentEntity.setLikeNum(0);
+        knowledgeContentEntity.setLikeNum(0L);
         contentService.save(knowledgeContentEntity);
 
 
@@ -137,20 +140,9 @@ public class KnowledgeContentController extends AbstractController {
     public R search(@RequestParam Map<String, Object> params) {
         //查询公共知识库分页数据
         //添加了es 当有关键词的时候 使用es查询
-        String key=(String)params.get("key");
-        if(key!=null && !key.isEmpty()){
-            PageUtils returnPage=searchService.queryIndex(params);
-            ArrayList<Long> idList=(ArrayList<Long>)returnPage.getList();
-            ArrayList<KnowledgeContentEntity> datas=new ArrayList<>();
-            for (Long id:idList) {
-                datas.add(contentService.selectById(id));
-            }
-            PageUtils page =new PageUtils(datas, returnPage.getTotalCount(), returnPage.getPageSize(), returnPage.getCurrPage());
-            return R.ok().put("page", page);
-        }else{
-            PageUtils page = contentService.commonContentPage(params);
-            return R.ok().put("page", page);
-        }
+        //es条件进行了修改，不只是关键词还增加了浏览数、点赞数和时间范围等
+        ESContentDTO esContentDTO = searchService.queryIndex(params);
+        return R.ok().put("esData",esContentDTO);
     }
 
     /**
@@ -161,7 +153,6 @@ public class KnowledgeContentController extends AbstractController {
         KnowledgeContentEntity knowledgeContentEntity = contentService.selectById(id);
 
         return R.ok().put("knowledgeContent", knowledgeContentEntity);
-
     }
 
     /**

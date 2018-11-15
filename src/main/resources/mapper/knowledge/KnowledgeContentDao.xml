@@ -5,7 +5,7 @@
         select * from
         (select A.*,rownum rn from
         (
-          SELECT t.ID,t.TYPE_ID,t.TITLE,t.BRIEF,t.RSTATE,t.USER_ID,t.CREATE_DATE,t.REVIEW_DATE,t.LIKE_NUM,t1.type_name,t.USER_NAME FROM  k_content t
+          SELECT t.ID,t.TYPE_ID,t.TITLE,t.BRIEF,t.RSTATE,t.USER_ID,t.CREATE_DATE,t.REVIEW_DATE,t.LIKE_NUM,t.VIEW_NUM,t1.type_name,t.USER_NAME FROM  k_content t
           left join k_type t1 on t.type_id=t1.id
           <where>
             <if test="rstate != null ">
@@ -68,5 +68,9 @@
 
     <update id="addLikeSum">
         update k_content set LIKE_NUM=LIKE_NUM+1 where ID=#{id}
+    </update>
+
+    <update id="addViewSum">
+        update k_content set VIEW_NUM=VIEW_NUM+1 where ID=#{id}
     </update>
 </mapper>

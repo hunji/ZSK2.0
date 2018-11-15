@@ -65,6 +65,12 @@ public class ShiroConfig {
         filterMap.put("/swagger-ui.html", "anon");
         filterMap.put("/swagger-resources/**", "anon");
         filterMap.put("/captcha.jpg", "anon");
+
+        // 开放提供给知识库页面直接调用的接口
+        filterMap.put("/knowledge/content/search", "anon");
+        filterMap.put("/knowledge/content/search/**", "anon");
+        filterMap.put("/knowledge/content/searchDetail/**", "anon");
+        filterMap.put("/sys/oss/listForUser", "anon");
         filterMap.put("/**", "oauth2");
         shiroFilter.setFilterChainDefinitionMap(filterMap);
 

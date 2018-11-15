@@ -50,6 +50,8 @@ public class KnowledgeContentEntity  implements Serializable {
      * 提交人
      */
     private Long userId;
+
+    private String UserName;
     /**
      * 创建时间
      */
@@ -67,6 +69,10 @@ public class KnowledgeContentEntity  implements Serializable {
     /**
      * 点赞数目
      */
-    private Integer likeNum;
+    private Long likeNum;
 
+    /**
+     * 浏览数目
+     */
+    private Long viewNum;
 }

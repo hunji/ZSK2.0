@@ -10,7 +10,9 @@ public class KnoweledgeIndexKey {
     public static final String TITLE = "title";
     public static final String BRIEF = "brief";
     public static final String CONTENT = "content";
-    public static final String TYPE_NAME = "typeName";
     public static final String LIKE_NUM = "likeNum";
     public static final String REVIEW_DATE = "reviewDate";
+    public static final String VIEW_NUM = "viewNum";
+    public static final String TYPE_ID = "typeId";
+    public static final String USER_NAME = "userName";
 }

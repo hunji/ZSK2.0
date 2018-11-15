@@ -123,6 +123,20 @@ public class KnowledgeContentServiceImpl extends ServiceImpl<KnowledgeContentDao
         baseMapper.addLikeSum(id);
 
         // 点赞后也进行索引更新
-        searchService.index(id);
+        // 替换为部分字段更新
+        Long likeNum = this.selectById(id).getLikeNum();
+        Map<String, Object> jsonMap = new HashMap<>(1);
+        jsonMap.put("likeNum",likeNum);
+        searchService.updatePartial(id.toString(),jsonMap);
+    }
+
+    @Override
+    public void addViewSum(Long id) {
+        baseMapper.addViewSum(id);
+        //更新es中的滇藏苏
+        Long viewNum=this.selectById(id).getViewNum();
+        Map<String, Object> jsonMap = new HashMap<>(1);
+        jsonMap.put("viewNum",viewNum);
+        searchService.updatePartial(id.toString(),jsonMap);
     }
 }

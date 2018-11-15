@@ -1,0 +1,47 @@
+{
+
+  "settings":{
+
+    "number_of_replicas":0
+
+  },
+
+  "mappings":{
+
+    "knoweledge":{
+
+      "properties":{
+
+        "id":{
+          "type":"integer"
+        },
+        "title":{
+          "type":     "text"
+
+        },
+        "brief":{
+          "type":     "text"
+
+        },
+        "content":{
+
+          "type":     "text"
+
+        },
+        "reviewDate":{
+
+          "type":"date",
+
+          "format":"yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+
+        },
+        "likeNum":{
+          "type":"integer"
+        }
+      }
+
+    }
+
+  }
+
+}

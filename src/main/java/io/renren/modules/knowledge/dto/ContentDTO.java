@@ -39,9 +39,9 @@ public class ContentDTO implements Serializable {
      */
     private String brief;
     /**
-     * 详情 这里传输详情的话会导致加载变慢
+     * 详情 这里传输详情的话会导致加载变慢；在es中使用时才传content
      */
-    //private String content;
+    private String content;
 
     /**
      * 0.未审核 1.已审核
@@ -72,5 +72,10 @@ public class ContentDTO implements Serializable {
     /**
      * 点赞数目
      */
-    private Integer likeNum;
+    private Long likeNum;
+
+    /**
+     * 浏览数目
+     */
+    private Long viewNum;
 }

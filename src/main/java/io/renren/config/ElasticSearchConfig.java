@@ -1,17 +1,13 @@
 package io.renren.config;
 
-import org.elasticsearch.client.transport.TransportClient;
-import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.common.transport.TransportAddress;
-import org.elasticsearch.transport.client.PreBuiltTransportClient;
+import org.apache.http.HttpHost;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
 /**
  * @author hunji
  * @date 2018/11/5
@@ -32,18 +28,30 @@ public class ElasticSearchConfig {
         System.setProperty("es.set.netty.runtime.available.processors", "false");
     }
 
+//    @Bean
+//    public TransportClient esClient() throws UnknownHostException {
+//        Settings settings = Settings.builder()
+//                .put("cluster.name", this.esName)
+//                .put("client.transport.sniff", true)
+//                .build();
+//
+//        TransportAddress master = new TransportAddress(InetAddress.getByName(esHost), Integer.valueOf(esPort));
+//
+//        TransportClient client = new PreBuiltTransportClient(settings)
+//                .addTransportAddress(master);
+//        return client;
+//
+//    }
+
+    /**
+     * 9200是http rest的端口 使用RestHighLevelClient
+     * 9300是tcp的端口 使用TransportClient
+     * @return
+     */
     @Bean
-    public TransportClient esClient() throws UnknownHostException {
-        Settings settings = Settings.builder()
-                .put("cluster.name", this.esName)
-                .put("client.transport.sniff", true)
-                .build();
-
-        TransportAddress master = new TransportAddress(InetAddress.getByName(esHost), Integer.valueOf(esPort));
-
-        TransportClient client = new PreBuiltTransportClient(settings)
-                .addTransportAddress(master);
+    public RestHighLevelClient esClient(){
+        RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(
+                new HttpHost(esHost, esPort, "http")));
         return client;
-
     }
 }

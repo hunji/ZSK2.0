@@ -114,11 +114,11 @@ public class KnowledgeContentServiceImplTest {
 
     @Test
     public void addLikeSum() {
-        Integer numBefore=contentService.selectById(new Long(1)).getLikeNum();
+        Long numBefore=contentService.selectById(new Long(1)).getLikeNum();
         log.info(numBefore.toString());
         contentService.addLikeSum(new Long(1));
 
-        Integer numAfter=contentService.selectById(new Long(1)).getLikeNum();
+        Long numAfter=contentService.selectById(new Long(1)).getLikeNum();
         log.info(numAfter.toString());
         Assert.assertEquals(++numBefore,numAfter);
     }
