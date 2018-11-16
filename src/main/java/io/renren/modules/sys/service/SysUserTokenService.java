@@ -25,4 +25,6 @@ public interface SysUserTokenService extends IService<SysUserTokenEntity> {
 	 */
 	void logout(long userId);
 
+	R guestToken();
+
 }

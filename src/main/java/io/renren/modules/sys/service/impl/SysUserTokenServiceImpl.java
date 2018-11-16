@@ -63,4 +63,32 @@ public class SysUserTokenServiceImpl extends ServiceImpl<SysUserTokenDao, SysUse
 		tokenEntity.setToken(token);
 		this.updateById(tokenEntity);
 	}
+
+	@Override
+	public R guestToken() {
+		//生成一个token
+		String token = TokenGenerator.generateValue();
+		//当前时间
+		Date now = new Date();
+		//过期时间为一年 视为不过期
+		Date expireTime = new Date(now.getTime() + EXPIRE * 1000 * 30);
+		//判断是否生成过token 游客的id初始化为0
+		SysUserTokenEntity tokenEntity = this.selectById(10086);
+		if(tokenEntity==null){
+			tokenEntity = new SysUserTokenEntity();
+			tokenEntity.setUserId(10086L);
+			tokenEntity.setToken(token);
+			tokenEntity.setUpdateTime(now);
+			tokenEntity.setExpireTime(expireTime);
+			//保存token
+			this.insert(tokenEntity);
+		}else{
+			tokenEntity.setUpdateTime(now);
+			tokenEntity.setExpireTime(expireTime);
+			//更新token
+			this.updateById(tokenEntity);
+			token=tokenEntity.getToken();
+		}
+		return R.ok().put("token", token);
+	}
 }

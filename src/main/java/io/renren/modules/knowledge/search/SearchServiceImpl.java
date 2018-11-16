@@ -7,7 +7,9 @@ import io.renren.common.utils.Query;
 import io.renren.modules.knowledge.dto.ContentDTO;
 import io.renren.modules.knowledge.dto.ESContentDTO;
 import io.renren.modules.knowledge.entity.KnowledgeContentEntity;
+import io.renren.modules.knowledge.entity.KnowledgeTypeEntity;
 import io.renren.modules.knowledge.service.KnowledgeContentService;
+import io.renren.modules.knowledge.service.KnowledgeTypeService;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.delete.DeleteRequest;
@@ -32,6 +34,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author hunji
@@ -43,6 +46,9 @@ public class SearchServiceImpl implements ISearchService {
 
     @Autowired
     private KnowledgeContentService contentService;
+
+    @Autowired
+    private KnowledgeTypeService typeService;
 
     @Autowired
     private RestHighLevelClient esClient;
@@ -220,6 +226,7 @@ public class SearchServiceImpl implements ISearchService {
         String viewCount = (String) params.get("viewCount");
         String dianzanCount = (String) params.get("dianzanCount");
         String dateRange = (String) params.get("dateRange");
+        String typeID = (String) params.get("typeID");
         int page = Integer.parseInt(params.get("page").toString()) ;
         int limit = Integer.parseInt(params.get("limit").toString()) ;
         Query query = new Query(params);
@@ -230,6 +237,16 @@ public class SearchServiceImpl implements ISearchService {
         BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
 
         //region 处理查询条件
+
+        // 当有类型id参数传来时进行筛选
+        if(typeID !=null && !typeID.isEmpty() && Long.parseLong(typeID)>0){
+            Long typeParam = Long.parseLong(typeID) ;
+            List<Long> typeIDs = typeService.queryListParentId(typeParam)
+                    .stream().map(t -> t.getId()).collect(Collectors.toList());
+            typeIDs.add(typeParam);
+            TermsQueryBuilder typeQueryBuilder = QueryBuilders.termsQuery("typeId", typeIDs);
+            boolQueryBuilder.must(typeQueryBuilder);
+        }
 
         // 当有点赞数的参数传来时进行筛选
         if(dianzanCount !=null && !dianzanCount.isEmpty() && Long.parseLong(dianzanCount)>0){
@@ -248,9 +265,11 @@ public class SearchServiceImpl implements ISearchService {
         // 当有时间的参数限制传来时进行筛选
         Date nowDate = new Date();
         RangeQueryBuilder reviewDateQueryBuilder = QueryBuilders.rangeQuery("reviewDate");
-        if(dateRange!=null && !dateRange.isEmpty() && dateRange!="全部"){
+        if(dateRange!=null && !dateRange.isEmpty()){
             Date startDate;
             switch (dateRange){
+                case "全部":
+                    break;
                 case "一周内":
                     startDate = DateUtils.addDateWeeks(nowDate, -1);
                     reviewDateQueryBuilder.gte(DateUtils.formatTime(startDate));

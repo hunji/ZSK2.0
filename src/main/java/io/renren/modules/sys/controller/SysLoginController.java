@@ -84,6 +84,15 @@ public class SysLoginController extends AbstractController {
 
 
 	/**
+	 * 游客登录处理
+	 * @return
+	 */
+	@PostMapping("/sys/guest")
+	public Map<String, Object> guestLogin(){
+		//游客登录进来后去查找是否数据库中有token有的话直接查出来返回
+		return sysUserTokenService.guestToken();
+	}
+	/**
 	 * 退出
 	 */
 	@PostMapping("/sys/logout")
