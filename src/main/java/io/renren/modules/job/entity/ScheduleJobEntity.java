@@ -16,8 +16,10 @@
 
 package io.renren.modules.job.entity;
 
+import com.baomidou.mybatisplus.annotations.KeySequence;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.enums.IdType;
 
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
@@ -30,6 +32,7 @@ import java.util.Date;
  * @since 1.2.0 2016-11-28
  */
 @TableName("schedule_job")
+@KeySequence("SEQ_SCHEDULE_JOB")
 public class ScheduleJobEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -41,7 +44,7 @@ public class ScheduleJobEntity implements Serializable {
 	/**
 	 * 任务id
 	 */
-	@TableId
+	@TableId(value="JOB_ID",type=IdType.INPUT)
 	private Long jobId;
 
 	/**

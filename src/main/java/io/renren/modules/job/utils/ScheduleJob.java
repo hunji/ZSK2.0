@@ -15,7 +15,6 @@
  */
 
 package io.renren.modules.job.utils;
-
 import io.renren.common.utils.SpringContextUtils;
 import io.renren.modules.job.entity.ScheduleJobEntity;
 import io.renren.modules.job.entity.ScheduleJobLogEntity;
@@ -28,9 +27,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 
 import java.util.Date;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 
 /**
@@ -42,12 +39,12 @@ import java.util.concurrent.Future;
 public class ScheduleJob extends QuartzJobBean {
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	private ExecutorService service = Executors.newSingleThreadExecutor();
-	
-    @Override
+
+	@Override
     protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
         ScheduleJobEntity scheduleJob = (ScheduleJobEntity) context.getMergedJobDataMap()
         		.get(ScheduleJobEntity.JOB_PARAM_KEY);
-        
+
         //获取spring bean
         ScheduleJobLogService scheduleJobLogService = (ScheduleJobLogService) SpringContextUtils.getBean("scheduleJobLogService");
         

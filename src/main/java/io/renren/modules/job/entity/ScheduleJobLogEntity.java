@@ -16,8 +16,10 @@
 
 package io.renren.modules.job.entity;
 
+import com.baomidou.mybatisplus.annotations.KeySequence;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.enums.IdType;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -29,13 +31,14 @@ import java.util.Date;
  * @since 1.2.0 2016-11-28
  */
 @TableName("schedule_job_log")
+@KeySequence("SEQ_SCHEDULE_LOG")
 public class ScheduleJobLogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * 日志id
 	 */
-	@TableId
+	@TableId(value="LOG_ID",type=IdType.INPUT)
 	private Long logId;
 	
 	/**

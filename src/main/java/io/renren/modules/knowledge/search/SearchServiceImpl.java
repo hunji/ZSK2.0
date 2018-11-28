@@ -7,7 +7,6 @@ import io.renren.common.utils.Query;
 import io.renren.modules.knowledge.dto.ContentDTO;
 import io.renren.modules.knowledge.dto.ESContentDTO;
 import io.renren.modules.knowledge.entity.KnowledgeContentEntity;
-import io.renren.modules.knowledge.entity.KnowledgeTypeEntity;
 import io.renren.modules.knowledge.service.KnowledgeContentService;
 import io.renren.modules.knowledge.service.KnowledgeTypeService;
 import lombok.extern.slf4j.Slf4j;
@@ -316,7 +315,7 @@ public class SearchServiceImpl implements ISearchService {
             for (SearchHit hit : hits) {
                 String es_title = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.TITLE));
                 String es_brief = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.BRIEF));
-                String es_content = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.CONTENT));
+                // String es_content = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.CONTENT));
                 String es_userName = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.USER_NAME));
                 Long es_id = Longs.tryParse(String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.KNOWLEDGE_ID)));
                 Long es_like =Longs.tryParse(String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.LIKE_NUM)));
@@ -331,7 +330,7 @@ public class SearchServiceImpl implements ISearchService {
                 ContentDTO dto=new ContentDTO();
                 dto.setTitle(es_title);
                 dto.setBrief(es_brief);
-                dto.setContent(es_content);
+                // dto.setContent(es_content);
                 dto.setUserName(es_userName);
                 dto.setId(es_id);
                 dto.setLikeNum(es_like);

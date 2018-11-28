@@ -1,16 +1,20 @@
 spring:
     datasource:
         type: com.alibaba.druid.pool.DruidDataSource
-        driverClassName: com.mysql.jdbc.Driver
+#        driverClassName: com.mysql.jdbc.Driver
+        driver-class-name: oracle.jdbc.driver.OracleDriver
         druid:
-            first:
-                url: jdbc:mysql://localhost:3306/renren_fast?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
-                username: renren
-                password: 123456
-            second:
-                url: jdbc:mysql://localhost:3306/renren_fast?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
-                username: renren
-                password: 123456
+            first:  #数据源1
+                # url: jdbc:mysql://localhost:3306/renren_fast?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+                # username: renren
+                # password: 123456
+                url: jdbc:oracle:thin:@10.1.0.149:1521:orcl
+                username: ZSK
+                password: ZSK
+            second:  #数据源2
+                url: jdbc:oracle:thin:@10.1.0.149:1521:orcl
+                username: ZSK
+                password: ZSK
             initial-size: 10
             max-active: 100
             min-idle: 10
@@ -19,7 +23,7 @@ spring:
             max-pool-prepared-statement-per-connection-size: 20
             time-between-eviction-runs-millis: 60000
             min-evictable-idle-time-millis: 300000
-            validation-query: SELECT 1 FROM DUAL
+            #validation-query: SELECT 1 FROM DUAL
             test-while-idle: true
             test-on-borrow: false
             test-on-return: false
@@ -32,7 +36,7 @@ spring:
                 stat:
                     log-slow-sql: true
                     slow-sql-millis: 1000
-                    merge-sql: true
+                    merge-sql: false
                 wall:
                     config:
                         multi-statement-allow: true

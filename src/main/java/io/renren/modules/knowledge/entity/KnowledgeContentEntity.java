@@ -51,7 +51,7 @@ public class KnowledgeContentEntity  implements Serializable {
      */
     private Long userId;
 
-    private String UserName;
+    private String userName;
     /**
      * 创建时间
      */

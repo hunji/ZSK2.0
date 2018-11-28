@@ -5,7 +5,7 @@
     <logger name="org.springboot.sample" level="TRACE" />
 
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
-    <property name="LOG_HOME" value="D:/logs" />
+    <property name="LOG_HOME" value="E:/logs" />
     <!-- 控制台打印日志的相关配置 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- 日志格式 -->
@@ -27,8 +27,8 @@
     <!-- 文件保存日志的相关配置 -->
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 保存日志文件的路径 -->
-        <!--     <file>D:/logs/admin_info.log</file> -->
-        <file>D:/logs/admin_info.log</file>
+        <!--     <file>E:/logs/admin_info.log</file> -->
+        <file>E:/logs/admin_info.log</file>
         <!-- 日志格式 -->
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} [%class:%line] - %m%n</pattern>
@@ -45,7 +45,7 @@
         <!-- 循环政策：基于时间创建日志文件 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 日志文件名格式 -->
-            <fileNamePattern>D:/logs/admin_info.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>E:/logs/admin_info.%d{yyyy-MM-dd}.log</fileNamePattern>
             <!-- 最大保存时间：30天-->
             <maxHistory>30</maxHistory>
         </rollingPolicy>
@@ -53,8 +53,8 @@
 
     <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 保存日志文件的路径 -->
-        <!--     <file>D:/logs/admin_error.log</file> -->
-        <file>D:/logs/admin_error.log</file>
+        <!--     <file>E:/logs/admin_error.log</file> -->
+        <file>E:/logs/admin_error.log</file>
         <!-- 日志格式 -->
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} [%class:%line] - %m%n</pattern>
@@ -72,7 +72,7 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 日志文件名格式 -->
             <!--       <fileNamePattern>e:/logs/admin_error.%d{yyyy-MM-dd}.log</fileNamePattern> -->
-            <fileNamePattern>D:/logs//admin_error.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>E:/logs//admin_error.%d{yyyy-MM-dd}.log</fileNamePattern>
             <!-- 最大保存时间：30天-->
             <maxHistory>30</maxHistory>
         </rollingPolicy>
