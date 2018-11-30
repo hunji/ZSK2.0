@@ -356,12 +356,17 @@ public class SearchServiceImpl implements ISearchService {
         SearchHits hits = null;
         try {
             hits = this.esClient.search(request).getHits();
-            String esId = hits.getAt(0).getId();
-            UpdateRequest updateRequest = new UpdateRequest(INDEX_NAME, INDEX_TYPE, esId)
-                    .doc(jsonMap);
-            UpdateResponse response = this.esClient.update(updateRequest);
-            if (response.status() == RestStatus.OK) {
-                return true;
+
+            if (hits.totalHits != 0) {
+                String esId = hits.getAt(0).getId();
+                UpdateRequest updateRequest = new UpdateRequest(INDEX_NAME, INDEX_TYPE, esId)
+                        .doc(jsonMap);
+                UpdateResponse response = this.esClient.update(updateRequest);
+                if (response.status() == RestStatus.OK) {
+                    return true;
+                } else {
+                    return false;
+                }
             } else {
                 return false;
             }

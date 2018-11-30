@@ -5,7 +5,7 @@
         select * from
         (select A.*,rownum rn from
         (
-          SELECT t.ID,t.TYPE_ID,t.TITLE,t.BRIEF,t.RSTATE,t.USER_ID,t.CREATE_DATE,t.REVIEW_DATE,t.LIKE_NUM,t.VIEW_NUM,t1.type_name,t.USER_NAME FROM  k_content t
+          SELECT t.ID,t.TYPE_ID,t.TITLE,t.BRIEF,t.RSTATE,t.USER_ID,t.CREATE_DATE,t.REVIEW_DATE,t.LIKE_NUM,t.VIEW_NUM,t.USER_NAME,t1.type_name FROM  k_content t
           left join k_type t1 on t.type_id=t1.id
           <where>
             <if test="rstate != null ">
@@ -14,16 +14,21 @@
             <if test="user_id != null ">
                 and t.user_id = #{user_id}
             </if>
-            <if test="type_id != null and type_id.trim()!=0">
-                and (t.type_id = #{type_id} or t1.parent_id = #{type_id})
-            </if>
             <if test="key != null and key.trim() != ''">
                 and (title like concat(concat('%',#{key}),'%') or brief like concat(concat('%',#{key}),'%'))
+            </if>
+            <if test="typeIDs != null">
+                and type_id in
+                <foreach item="item" index="index" collection="typeIDs"
+                         open="(" separator="," close=")">
+                 #{item}
+                </foreach>
             </if>
             <if test="id != null ">
                 and t.id ='#{id}'
             </if>
           </where>
+          order by ID
         )A
           <if test="offset != null">
               where rownum  &lt;= (#{offset}+#{limit})
@@ -46,8 +51,12 @@
             <if test="user_id != null ">
                 and t.user_id = #{user_id}
             </if>
-            <if test="type_id != null and type_id.trim()!=0">
-                and (t.type_id = #{type_id} or t1.parent_id = #{type_id})
+            <if test="typeIDs != null">
+                and type_id in
+                <foreach item="item" index="index" collection="typeIDs"
+                         open="(" separator="," close=")">
+                    #{item}
+                </foreach>
             </if>
             <if test="key != null and key.trim() != ''">
                and  (title like concat(concat('%',#{key}),'%') or brief like concat(concat('%',#{key}),'%'))

@@ -8,13 +8,17 @@ import io.renren.common.utils.Query;
 import io.renren.modules.knowledge.dao.KnowledgeContentDao;
 import io.renren.modules.knowledge.dto.ContentDTO;
 import io.renren.modules.knowledge.entity.KnowledgeContentEntity;
+import io.renren.modules.knowledge.entity.KnowledgeTypeEntity;
 import io.renren.modules.knowledge.search.ISearchService;
 import io.renren.modules.knowledge.service.KnowledgeContentService;
+import io.renren.modules.knowledge.service.KnowledgeTypeService;
 import io.renren.modules.sys.service.ShiroService;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static io.renren.common.utils.Constant.knowledgeContentPermission;
 
@@ -28,6 +32,8 @@ public class KnowledgeContentServiceImpl extends ServiceImpl<KnowledgeContentDao
     private ShiroService shiroService;
     @Autowired
     private ISearchService searchService;
+    @Autowired
+    private KnowledgeTypeService typeService;
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
@@ -50,6 +56,13 @@ public class KnowledgeContentServiceImpl extends ServiceImpl<KnowledgeContentDao
         // 改成DTO给页面使用
         params.put("rstate", 1);
         // 增加了根据类型查询；类型又分为了主题和类型两类
+        // 类型通过递归查询先找到所有的子类,然后把子类
+        String type_id = params.get("type_id").toString();
+        if(StringUtils.isNotBlank(type_id) && type_id.trim()!="0"){
+            List<Long> typeIDs = typeService.queryListParentId(Long.parseLong(type_id))
+                    .stream().map(t -> t.getId()).collect(Collectors.toList());
+            params.put("typeIDs", typeIDs);
+        }
         return this.queryDTO(params);
     }
 

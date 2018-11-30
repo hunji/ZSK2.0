@@ -4,6 +4,7 @@ io\renren\modules\knowledge\service\impl\KnowledgeTypeServiceImplTest.class
 io\renren\DynamicDataSourceTest.class
 io\renren\modules\knowledge\search\SearchServiceImplTest$2.class
 io\renren\modules\knowledge\search\SearchServiceImplTest.class
+io\renren\modules\knowledge\service\impl\KnowledgeHistoryServiceImplTest.class
 io\renren\modules\knowledge\search\SearchServiceImplTest$1.class
 io\renren\common\utils\RedisUtilsTest.class
 io\renren\modules\knowledge\service\impl\KnowledgeContentServiceImplTest.class

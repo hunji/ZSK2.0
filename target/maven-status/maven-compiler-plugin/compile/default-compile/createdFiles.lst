@@ -26,7 +26,9 @@ io\renren\common\utils\Constant$CloudService.class
 io\renren\modules\job\utils\ScheduleUtils.class
 io\renren\config\ElasticSearchConfig.class
 io\renren\common\utils\IPUtils.class
+io\renren\modules\knowledge\controller\KnowledgeHistoryController.class
 io\renren\modules\job\task\TestTask.class
+io\renren\modules\knowledge\dao\KnowledgeHistoryDao.class
 io\renren\modules\job\service\ScheduleJobService.class
 io\renren\config\WebConfig.class
 io\renren\modules\sys\dao\SysRoleMenuDao.class
@@ -34,6 +36,7 @@ io\renren\common\validator\group\QcloudGroup.class
 io\renren\modules\knowledge\search\KnoweledgeIndexKey.class
 io\renren\modules\sys\entity\SysUserRoleEntity.class
 io\renren\modules\sys\service\impl\SysRoleServiceImpl.class
+io\renren\modules\knowledge\service\KnowledgeHistoryService.class
 io\renren\modules\sys\service\ShiroService.class
 io\renren\modules\app\form\RegisterForm.class
 io\renren\modules\sys\service\SysConfigService.class
@@ -70,6 +73,7 @@ io\renren\modules\app\annotation\LoginUser.class
 io\renren\modules\job\entity\ScheduleJobEntity.class
 io\renren\modules\sys\entity\SysRoleMenuEntity.class
 io\renren\modules\sys\service\SysUserService.class
+io\renren\modules\knowledge\service\impl\KnowledgeHistoryServiceImpl.class
 io\renren\common\utils\ConfigConstant.class
 io\renren\datasources\DynamicDataSource.class
 io\renren\modules\job\service\impl\ScheduleJobServiceImpl.class
@@ -126,6 +130,7 @@ io\renren\common\utils\SpringContextUtils.class
 io\renren\modules\job\config\ScheduleConfig.class
 io\renren\modules\knowledge\dao\KnowledgeContentDao.class
 io\renren\modules\knowledge\service\impl\KnowledgeContentServiceImpl.class
+io\renren\modules\knowledge\entity\KnowledgeHistoryEntity.class
 io\renren\modules\knowledge\service\impl\KnowledgeTypeServiceImpl.class
 io\renren\modules\app\annotation\Login.class
 io\renren\common\utils\MapUtils.class

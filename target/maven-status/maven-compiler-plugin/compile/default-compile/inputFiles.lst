@@ -17,6 +17,7 @@ F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\redis\SysConfigRedi
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\common\xss\SQLFilter.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\job\utils\ScheduleRunnable.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\common\validator\group\QcloudGroup.java
+F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\controller\KnowledgeHistoryController.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\entity\SysUserRoleEntity.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\service\impl\SysRoleServiceImpl.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\app\form\LoginForm.java
@@ -37,6 +38,7 @@ F:\TM\RenRen\renren-fast\src\main\java\io\renren\common\utils\R.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\oss\controller\SysOssController.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\dao\SysCaptchaDao.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\dao\SysUserDao.java
+F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\service\impl\KnowledgeHistoryServiceImpl.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\dao\SysUserTokenDao.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\form\SysLoginForm.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\job\entity\ScheduleJobEntity.java
@@ -44,6 +46,7 @@ F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\dto\ContentDT
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\oauth2\OAuth2Token.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\entity\SysCaptchaEntity.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\entity\SysUserTokenEntity.java
+F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\dao\KnowledgeHistoryDao.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\datasources\aspect\DataSourceAspect.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\service\impl\KnowledgeContentServiceImpl.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\app\annotation\Login.java
@@ -54,6 +57,7 @@ F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\controller\SysConfi
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\app\form\RegisterForm.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\search\SearchServiceImpl.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\common\validator\group\Group.java
+F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\entity\KnowledgeHistoryEntity.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\common\exception\RRExceptionHandler.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\job\dao\ScheduleJobDao.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\service\impl\SysUserRoleServiceImpl.java
@@ -144,6 +148,7 @@ F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\oss\entity\SysOssEntity
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\controller\SysRoleController.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\datasources\DynamicDataSource.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\common\utils\IPUtils.java
+F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\service\KnowledgeHistoryService.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\config\RedisConfig.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\sys\controller\SysUserController.java
 F:\TM\RenRen\renren-fast\src\main\java\io\renren\modules\knowledge\dao\KnowledgeTypeDao.java

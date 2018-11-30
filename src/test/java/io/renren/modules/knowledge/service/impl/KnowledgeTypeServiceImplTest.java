@@ -1,5 +1,6 @@
 package io.renren.modules.knowledge.service.impl;
 
+import io.renren.modules.knowledge.entity.KnowledgeTypeEntity;
 import io.renren.modules.knowledge.service.KnowledgeTypeService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.*;
@@ -43,6 +45,13 @@ public class KnowledgeTypeServiceImplTest {
         Long[] typeIds={new Long(1)};
 
         knowledgeTypeService.deleteBatch(typeIds);
+    }
+
+    @Test
+    public void queryListParentId(){
+        List<KnowledgeTypeEntity> entities = knowledgeTypeService.queryListParentId(100L);
+        System.out.println(entities.size());
+
     }
 
 }

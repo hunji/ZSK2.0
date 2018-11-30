@@ -14,6 +14,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -75,11 +76,12 @@ public class KnowledgeTypeServiceImpl extends ServiceImpl<KnowledgeTypeDao,Knowl
     }
 
     @Override
+    /**
+     * 递归找到所有的子节点
+     */
     public List<KnowledgeTypeEntity> queryListParentId(Long parentId) {
-        List<KnowledgeTypeEntity> list = this.selectList(
-                new EntityWrapper<KnowledgeTypeEntity>().eq("parent_id", parentId)
-        );
-        return list;
+        List<KnowledgeTypeEntity> knowledgeTypeEntities = baseMapper.queryByParent(parentId);
+        return knowledgeTypeEntities;
     }
 
     @Override

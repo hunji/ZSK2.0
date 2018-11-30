@@ -2,6 +2,7 @@ F:\TM\RenRen\renren-fast\src\test\java\io\renren\modules\knowledge\search\Search
 F:\TM\RenRen\renren-fast\src\test\java\io\renren\modules\knowledge\service\impl\KnowledgeContentServiceImplTest.java
 F:\TM\RenRen\renren-fast\src\test\java\io\renren\DynamicDataSourceTest.java
 F:\TM\RenRen\renren-fast\src\test\java\io\renren\JwtTest.java
+F:\TM\RenRen\renren-fast\src\test\java\io\renren\modules\knowledge\service\impl\KnowledgeHistoryServiceImplTest.java
 F:\TM\RenRen\renren-fast\src\test\java\io\renren\service\DataSourceTestService.java
 F:\TM\RenRen\renren-fast\src\test\java\io\renren\RedisTest.java
 F:\TM\RenRen\renren-fast\src\test\java\io\renren\common\utils\RedisUtilsTest.java

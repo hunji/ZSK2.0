@@ -75,6 +75,7 @@ public class ShiroConfig {
         filterMap.put("/knowledge/content/search/**", "anon");
         filterMap.put("/knowledge/content/searchDetail/**", "anon");
         filterMap.put("/knowledge/type/**","anon");
+        filterMap.put("/knowledge/history/**","anon");
         filterMap.put("/sys/oss/listForUser", "anon");
         filterMap.put("/**", "oauth2");
         shiroFilter.setFilterChainDefinitionMap(filterMap);
