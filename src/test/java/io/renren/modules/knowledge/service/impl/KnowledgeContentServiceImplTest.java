@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
  * @date 2018/11/5
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Slf4j
 @Transactional
 public class KnowledgeContentServiceImplTest {

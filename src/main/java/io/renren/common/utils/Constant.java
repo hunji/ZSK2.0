@@ -101,4 +101,40 @@ public class Constant {
 
     public static final String knowledgeContentPermission="knowledge:content:review";
 
+    public enum MessageType{
+        /**
+         * 新用户登录
+         */
+        ADDUSER(0),
+        /**
+         * 用户退出
+         */
+        QUIT(1),
+        /**
+         * 发起问题
+         */
+        QUESTION(2),
+        /**
+         * 回答问题
+         */
+        ANSWER(3),
+
+        /**
+         * 发信息
+         */
+        CONTENT(4);
+
+        private int value;
+
+        MessageType(int value) {
+            this.value = value;
+        }
+
+        public int getValue() {
+            return value;
+        }
+    }
+
+    public static final String KNOWLEDGE_GUEST_ROEL_NAME ="游客";
+
 }

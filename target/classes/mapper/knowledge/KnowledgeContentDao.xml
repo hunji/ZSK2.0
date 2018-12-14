@@ -51,8 +51,12 @@
             <if test="user_id != null ">
                 and t.user_id = #{user_id}
             </if>
-            <if test="type_id != null and type_id.trim()!=0">
-                and (t.type_id = #{type_id} or t1.parent_id = #{type_id})
+            <if test="typeIDs != null">
+                and type_id in
+                <foreach item="item" index="index" collection="typeIDs"
+                         open="(" separator="," close=")">
+                    #{item}
+                </foreach>
             </if>
             <if test="key != null and key.trim() != ''">
                and  (title like concat(concat('%',#{key}),'%') or brief like concat(concat('%',#{key}),'%'))

@@ -42,7 +42,10 @@ public class OAuth2Filter extends AuthenticatingFilter {
         if(((HttpServletRequest) request).getMethod().equals(RequestMethod.OPTIONS.name())){
             return true;
         }
-
+        //websocket 请求时不进行拦截
+        if(((HttpServletRequest) request).getRequestURL().toString().contains("websocket")){
+            return true;
+        }
         return false;
     }
 

@@ -2,12 +2,14 @@ package io.renren.modules.sys.service.impl;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import io.renren.common.utils.MapUtils;
+import io.renren.modules.knowledge.dto.UserInfo;
+import io.renren.modules.knowledge.websocket.WebSocketServer;
 import io.renren.modules.sys.dao.SysUserRoleDao;
 import io.renren.modules.sys.entity.SysUserRoleEntity;
 import io.renren.modules.sys.service.SysUserRoleService;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -51,5 +53,43 @@ public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleDao, SysUserR
 	@Override
 	public int deleteBatch(Long[] roleIds){
 		return baseMapper.deleteBatch(roleIds);
+	}
+
+	@Override
+	public List<String> queryRoleByUserName(String userName) {
+		return baseMapper.queryRoleByUserName(userName);
+	}
+
+	@Override
+	public List<UserInfo> queryAdminUser() {
+		List<String> list = baseMapper.queryAdminUserName();
+		return generateUserInfo(list);
+	}
+
+	@Override
+	public List<UserInfo> queryGuestUser() {
+		List<String> list = baseMapper.queryGuestUserName();
+		return generateUserInfo(list);
+	}
+
+	/**
+	 * 生成用户信息
+	 * 包含，用户名称、是否在线等
+	 * @param 用户名称
+	 * @return
+	 */
+	private List<UserInfo> generateUserInfo(List<String> list) {
+		ArrayList<UserInfo> returnList= new ArrayList<>();
+		for (String name: list) {
+			UserInfo userInfo = new UserInfo(name);
+			if(WebSocketServer.userWebSocketSet.stream().anyMatch(n ->n.sid.equals(name))){
+				userInfo.setIsOnline(true);
+			}
+			returnList.add(userInfo);
+		}
+		// 进行了排序把未在线的放在后面在线的放在前面
+		Collections.sort(returnList, (o1, o2) -> Boolean.compare(o1.getIsOnline(),o2.getIsOnline()));
+		Collections.reverse(returnList);
+		return returnList;
 	}
 }

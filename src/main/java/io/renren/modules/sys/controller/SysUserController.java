@@ -36,7 +36,6 @@ public class SysUserController extends AbstractController {
 	@Autowired
 	private SysUserRoleService sysUserRoleService;
 
-
 	/**
 	 * 所有用户列表
 	 */

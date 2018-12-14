@@ -26,4 +26,20 @@ public interface SysUserRoleDao extends BaseMapper<SysUserRoleEntity> {
 	 * 根据角色ID数组，批量删除
 	 */
 	int deleteBatch(Long[] roleIds);
+
+	List<String> queryRoleByUserName(String userName);
+
+	/**
+	 * 获取admin的用户名称
+	 * @return
+	 */
+
+	List<String> queryAdminUserName();
+
+	/**
+	 * 获取游客的用户名称
+	 * @return
+	 */
+
+	List<String> queryGuestUserName();
 }

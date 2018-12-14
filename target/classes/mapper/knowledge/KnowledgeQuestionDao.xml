@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.renren.modules.knowledge.dao.KnowledgeQuestionDao">
+    <select id="chatContent" resultType="io.renren.modules.knowledge.entity.KnowledgeQuestionEntity">
+        select * from K_QUESTION t
+        where (sid=#{SID} and user_name=#{userName})
+        or (user_name=#{SID} and sid=#{userName})
+        order by create_date
+    </select>
+</mapper>

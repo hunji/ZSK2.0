@@ -11,4 +11,25 @@
     <select id="queryRoleIdList" resultType="long">
         select role_id from sys_user_role where user_id = #{value}
     </select>
+
+    <select id="queryRoleByUserName" resultType="string">
+        select t2.role_name from  sys_user_role t
+        join  sys_user t1 on t.user_id=t1.user_id
+        join sys_role t2 on t.role_id=t2.role_id
+        where t1.username=#{userName}
+    </select>
+
+    <select id="queryGuestUserName" resultType="string">
+        select t1.username from  sys_user_role t
+        join  sys_user t1 on t.user_id=t1.user_id
+        join sys_role t2 on t.role_id=t2.role_id
+        where t2.role_name='游客'
+    </select>
+
+    <select id="queryAdminUserName" resultType="string">
+        select t1.username from  sys_user_role t
+        join  sys_user t1 on t.user_id=t1.user_id
+        join sys_role t2 on t.role_id=t2.role_id
+        where t2.role_name='知识库管理员' or t2.role_name='知识库使用人员'
+    </select>
 </mapper>

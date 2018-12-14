@@ -58,7 +58,7 @@ public class KnowledgeContentServiceImpl extends ServiceImpl<KnowledgeContentDao
         // 增加了根据类型查询；类型又分为了主题和类型两类
         // 类型通过递归查询先找到所有的子类,然后把子类
         String type_id = params.get("type_id").toString();
-        if(StringUtils.isNotBlank(type_id) && type_id.trim()!="0"){
+        if(StringUtils.isNotBlank(type_id) && !"0".equals(type_id.trim())){
             List<Long> typeIDs = typeService.queryListParentId(Long.parseLong(type_id))
                     .stream().map(t -> t.getId()).collect(Collectors.toList());
             params.put("typeIDs", typeIDs);

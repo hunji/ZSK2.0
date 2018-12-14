@@ -1,6 +1,7 @@
 package io.renren.modules.sys.service;
 
 import com.baomidou.mybatisplus.service.IService;
+import io.renren.modules.knowledge.dto.UserInfo;
 import io.renren.modules.sys.entity.SysUserRoleEntity;
 
 import java.util.List;
@@ -27,4 +28,16 @@ public interface SysUserRoleService extends IService<SysUserRoleEntity> {
 	 * 根据角色ID数组，批量删除
 	 */
 	int deleteBatch(Long[] roleIds);
+
+	/**
+	 * 根据用户名称查找角色名
+	 * @param 用户名
+	 * @return
+	 */
+	List<String> queryRoleByUserName(String userName);
+
+	List<UserInfo> queryAdminUser();
+
+	List<UserInfo> queryGuestUser();
+
 }
