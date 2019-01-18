@@ -7,4 +7,36 @@
         or (user_name=#{SID} and sid=#{userName})
         order by create_date
     </select>
+
+    <select id="chatContentPage" resultType="io.renren.modules.knowledge.entity.KnowledgeQuestionEntity">
+        select * from
+        (select A.*,rownum rn from
+        (
+        select * from K_QUESTION t
+        <where>
+            <if test="SID != null and userName != null and SID.trim() != '' and userName.trim() != ''">
+                (sid=#{SID} and user_name=#{userName}) or (user_name=#{SID} and sid=#{userName})
+            </if>
+        </where>
+        order by create_date desc
+        )A
+        <if test="offset != null">
+            where rownum  &lt;= (#{offset}+#{limit})
+        </if>
+
+        )
+        <if test="limit !=null">
+            where rn &gt; #{offset}
+        </if>
+
+    </select>
+
+    <select id="chatContentPageCount" resultType="int">
+        select count(*) from K_QUESTION t
+        <where>
+            <if test="SID != null and userName != null">
+                (sid=#{SID} and user_name=#{userName}) or (user_name=#{SID} and sid=#{userName})
+            </if>
+        </where>
+    </select>
 </mapper>

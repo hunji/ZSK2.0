@@ -73,7 +73,7 @@ public class SysUserTokenServiceImpl extends ServiceImpl<SysUserTokenDao, SysUse
 		Date now = new Date();
 		//过期时间为一年 视为不过期
 		Date expireTime = new Date(now.getTime() + EXPIRE * 1000 * 30);
-		//判断是否生成过token 游客的id初始化为0
+		//判断是否生成过token 游客的id初始化为10086
 		SysUserTokenEntity tokenEntity = this.selectById(10086);
 		if(tokenEntity==null){
 			tokenEntity = new SysUserTokenEntity();

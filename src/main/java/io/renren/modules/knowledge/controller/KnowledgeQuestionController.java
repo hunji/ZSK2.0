@@ -1,18 +1,18 @@
 package io.renren.modules.knowledge.controller;
 
 import io.renren.common.utils.PageUtils;
+import io.renren.common.utils.Query;
 import io.renren.common.utils.R;
-import io.renren.modules.knowledge.dto.QuestionDTO;
 import io.renren.modules.knowledge.dto.UserInfo;
 import io.renren.modules.knowledge.entity.KnowledgeQuestionEntity;
 import io.renren.modules.knowledge.service.KnowledgeQuestionService;
-import io.renren.modules.knowledge.websocket.WebSocketServer;
 import io.renren.modules.sys.controller.AbstractController;
 import io.renren.modules.sys.service.SysUserRoleService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -30,17 +30,6 @@ public class KnowledgeQuestionController  extends AbstractController {
     private KnowledgeQuestionService questionService;
     @Autowired
     private SysUserRoleService userRoleService;
-
-    @RequestMapping("/list")
-    @RequiresPermissions("knowledge:question:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = questionService.queryPage(params);
-
-        QuestionDTO questionDTO = new QuestionDTO();
-        questionDTO.setPage(page);
-        questionDTO.setTotalCount(WebSocketServer.userOnlineCount);
-        return R.ok().put("qData", questionDTO);
-    }
 
     /**
      * 保存问题时调用
@@ -79,9 +68,15 @@ public class KnowledgeQuestionController  extends AbstractController {
      * @return
      */
     @RequestMapping("/chatContent")
+    @RequiresPermissions("knowledge:question:list")
     public R chatContent(@RequestParam Map<String, Object> params){
-        List<KnowledgeQuestionEntity> contentList = questionService.chatContent(params);
-        return R.ok().put("contentList",contentList);
+        Query query = new Query(params);
+        List<KnowledgeQuestionEntity> contentList = questionService.chatContentPage(query);
+        // 分页查出最新的20条数据后进行反转 让最新的消息放在最后面
+        Collections.reverse(contentList);
+        int total = questionService.chatContentPageCount(query);
+        PageUtils page = new PageUtils(contentList, total, query.getLimit(), query.getCurrPage());
+        return R.ok().put("page",page);
     }
 
     @RequestMapping("/roleInfo/{userName}")

@@ -84,7 +84,7 @@ public class KnowledgeTypeController extends AbstractController {
 
         //判断是否有子类型
         List<KnowledgeTypeEntity> list = knowledgeTypeService.queryListParentId(id);
-        if(list.size()>0){
+        if(list.size()>1){
             return R.error("请先删除该类下的子类型");
         }
         knowledgeTypeService.deleteEntity(id);

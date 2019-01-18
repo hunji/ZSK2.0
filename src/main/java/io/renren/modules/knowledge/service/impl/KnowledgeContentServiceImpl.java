@@ -146,7 +146,7 @@ public class KnowledgeContentServiceImpl extends ServiceImpl<KnowledgeContentDao
     @Override
     public void addViewSum(Long id) {
         baseMapper.addViewSum(id);
-        //更新es中的滇藏苏
+        //更新es中的浏览数
         Long viewNum=this.selectById(id).getViewNum();
         Map<String, Object> jsonMap = new HashMap<>(1);
         jsonMap.put("viewNum",viewNum);

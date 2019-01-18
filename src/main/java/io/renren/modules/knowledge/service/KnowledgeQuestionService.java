@@ -15,4 +15,8 @@ public interface KnowledgeQuestionService extends IService<KnowledgeQuestionEnti
     PageUtils queryPage(Map<String,Object> params);
     void save(KnowledgeQuestionEntity entity);
     List<KnowledgeQuestionEntity> chatContent(Map<String, Object> params);
+
+    List<KnowledgeQuestionEntity> chatContentPage(Map<String, Object> map);
+
+    int chatContentPageCount(Map<String, Object> map);
 }

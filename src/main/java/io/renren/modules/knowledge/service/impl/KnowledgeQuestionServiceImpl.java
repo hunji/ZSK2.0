@@ -39,4 +39,14 @@ public class KnowledgeQuestionServiceImpl extends ServiceImpl<KnowledgeQuestionD
         return baseMapper.chatContent(params);
     }
 
+    @Override
+    public List<KnowledgeQuestionEntity> chatContentPage(Map<String, Object> map) {
+        return baseMapper.chatContentPage(map);
+    }
+
+    @Override
+    public int chatContentPageCount(Map<String, Object> map) {
+        return baseMapper.chatContentPageCount(map);
+    }
+
 }

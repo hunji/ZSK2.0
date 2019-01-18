@@ -20,4 +20,8 @@ public interface KnowledgeQuestionDao extends BaseMapper<KnowledgeQuestionEntity
      * @return
      */
     List<KnowledgeQuestionEntity> chatContent(Map<String, Object> params);
+
+    List<KnowledgeQuestionEntity> chatContentPage(Map<String, Object> map);
+
+    int chatContentPageCount(Map<String, Object> map);
 }
