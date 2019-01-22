@@ -70,6 +70,9 @@ public class ShiroConfig {
         filterMap.put("/swagger-resources/**", "anon");
         filterMap.put("/captcha.jpg", "anon");
 
+        // 开放ws
+        filterMap.put("/ws/**", "anon");
+
         // 开放提供给知识库页面直接调用的接口
         filterMap.put("/knowledge/content/search", "anon");
         filterMap.put("/knowledge/content/search/**", "anon");

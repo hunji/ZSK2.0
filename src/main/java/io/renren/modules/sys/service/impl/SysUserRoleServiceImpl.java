@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import io.renren.common.utils.MapUtils;
 import io.renren.modules.knowledge.dto.UserInfo;
 import io.renren.modules.knowledge.websocket.WebSocketServer;
+import io.renren.modules.knowledge.websocket.WsUserRepository;
 import io.renren.modules.sys.dao.SysUserRoleDao;
 import io.renren.modules.sys.entity.SysUserRoleEntity;
 import io.renren.modules.sys.service.SysUserRoleService;
@@ -82,7 +83,10 @@ public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleDao, SysUserR
 		ArrayList<UserInfo> returnList= new ArrayList<>();
 		for (String name: list) {
 			UserInfo userInfo = new UserInfo(name);
-			if(WebSocketServer.userWebSocketSet.stream().anyMatch(n ->n.sid.equals(name))){
+			if(WsUserRepository.guestUsers.stream().anyMatch(n ->n.equals(name))){
+				userInfo.setIsOnline(true);
+			}
+			if(WsUserRepository.adminUsers.stream().anyMatch(n ->n.equals(name))){
 				userInfo.setIsOnline(true);
 			}
 			returnList.add(userInfo);
