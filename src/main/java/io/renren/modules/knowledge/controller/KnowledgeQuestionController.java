@@ -8,7 +8,6 @@ import io.renren.modules.knowledge.entity.KnowledgeQuestionEntity;
 import io.renren.modules.knowledge.service.KnowledgeQuestionService;
 import io.renren.modules.sys.controller.AbstractController;
 import io.renren.modules.sys.service.SysUserRoleService;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
@@ -68,7 +67,6 @@ public class KnowledgeQuestionController  extends AbstractController {
      * @return
      */
     @RequestMapping("/chatContent")
-    @RequiresPermissions("knowledge:question:list")
     public R chatContent(@RequestParam Map<String, Object> params){
         Query query = new Query(params);
         List<KnowledgeQuestionEntity> contentList = questionService.chatContentPage(query);
@@ -83,7 +81,8 @@ public class KnowledgeQuestionController  extends AbstractController {
     public R roleInfo(@PathVariable("userName") String userName){
         boolean isGuest=false;
         List<String> userInfos = userRoleService.queryRoleByUserName(userName);
-        if(userInfos.contains(KNOWLEDGE_GUEST_ROEL_NAME)){
+        // 没有角色时也认为是游客
+        if(userInfos.size()==0 ||userInfos.contains(KNOWLEDGE_GUEST_ROEL_NAME)){
             isGuest=true;
         }
         return R.ok().put("isGuest",isGuest);

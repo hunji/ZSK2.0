@@ -16,6 +16,7 @@
 
 package io.renren.modules.oss.controller;
 
+import com.alibaba.fastjson.JSON;
 import io.renren.common.exception.RRException;
 import io.renren.common.utils.DateUtils;
 import io.renren.common.utils.PageUtils;
@@ -72,7 +73,7 @@ public class SysOssController {
 	 * 上传文件
 	 */
 	@PostMapping("/upload")
-	public R upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws Exception {
+	public void upload(@RequestParam("file") MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		if (file.isEmpty()) {
 			throw new RRException("上传文件不能为空");
 		}
@@ -107,8 +108,15 @@ public class SysOssController {
 		ossEntity.setName(fileName);
 		ossEntity.setContentId(new Long(-1));
 		sysOssService.insert(ossEntity);
-
-		return R.ok().put("url", url);
+		// return R.ok().put("url", url);
+		response.setContentType("application/json;charset=UTF-8");
+		response.setCharacterEncoding("utf-8");
+		response.setHeader("Charset","utf-8");
+		response.setHeader("Cache-Control","no-cache");
+		PrintWriter writer = response.getWriter();
+		writer.write(JSON.toJSONString(R.ok().put("url", url)));
+		writer.flush();
+		writer.close();
 	}
 
 	@GetMapping("/uploadFileUpdate")

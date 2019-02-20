@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import io.renren.common.utils.PageUtils;
 import io.renren.common.utils.Query;
-import io.renren.common.utils.R;
 import io.renren.modules.knowledge.dao.KnowledgeQuestionDao;
 import io.renren.modules.knowledge.entity.KnowledgeQuestionEntity;
 import io.renren.modules.knowledge.service.KnowledgeQuestionService;

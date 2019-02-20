@@ -25,6 +25,9 @@ import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.elasticsearch.search.sort.FieldSortBuilder;
+import org.elasticsearch.search.sort.SortBuilders;
+import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -298,6 +301,12 @@ public class SearchServiceImpl implements ISearchService {
             boolQueryBuilder.must(multiMatchQueryBuilder);
         }
 
+        // 增加排序--20190218
+        FieldSortBuilder fsb = SortBuilders.fieldSort("id");
+        fsb.order(SortOrder.DESC);
+        searchSourceBuilder.sort(fsb);
+
+
         //endregion
         searchSourceBuilder.query(boolQueryBuilder);
         // 分页
@@ -315,7 +324,6 @@ public class SearchServiceImpl implements ISearchService {
             for (SearchHit hit : hits) {
                 String es_title = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.TITLE));
                 String es_brief = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.BRIEF));
-                // String es_content = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.CONTENT));
                 String es_userName = String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.USER_NAME));
                 Long es_id = Longs.tryParse(String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.KNOWLEDGE_ID)));
                 Long es_like =Longs.tryParse(String.valueOf(hit.getSourceAsMap().get(KnoweledgeIndexKey.LIKE_NUM)));
@@ -330,7 +338,6 @@ public class SearchServiceImpl implements ISearchService {
                 ContentDTO dto=new ContentDTO();
                 dto.setTitle(es_title);
                 dto.setBrief(es_brief);
-                // dto.setContent(es_content);
                 dto.setUserName(es_userName);
                 dto.setId(es_id);
                 dto.setLikeNum(es_like);

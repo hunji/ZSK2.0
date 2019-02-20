@@ -3,7 +3,6 @@ package io.renren.modules.sys.service.impl;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import io.renren.common.utils.MapUtils;
 import io.renren.modules.knowledge.dto.UserInfo;
-import io.renren.modules.knowledge.websocket.WebSocketServer;
 import io.renren.modules.knowledge.websocket.WsUserRepository;
 import io.renren.modules.sys.dao.SysUserRoleDao;
 import io.renren.modules.sys.entity.SysUserRoleEntity;
@@ -69,7 +68,8 @@ public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleDao, SysUserR
 
 	@Override
 	public List<UserInfo> queryGuestUser() {
-		List<String> list = baseMapper.queryGuestUserName();
+		List<String> list = new ArrayList<>();
+		WsUserRepository.guestUsers.forEach(list::add);
 		return generateUserInfo(list);
 	}
 

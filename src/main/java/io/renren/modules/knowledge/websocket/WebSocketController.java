@@ -37,7 +37,7 @@ public class WebSocketController {
 
         List<String> roleNames = userRoleService.queryRoleByUserName(message.getUserName());
         String toSID = message.getSid();
-        if (roleNames.contains(KNOWLEDGE_GUEST_ROEL_NAME)) {
+        if (WsUserRepository.isGuest(roleNames)) {
             // 用户在线时实时推送，不在线的话不处理
             CopyOnWriteArraySet<String> adminUsers = WsUserRepository.adminUsers;
             for (String user : adminUsers) {

@@ -11,6 +11,7 @@ import io.renren.modules.knowledge.service.KnowledgeContentService;
 import io.renren.modules.oss.service.SysOssService;
 import io.renren.modules.sys.controller.AbstractController;
 import io.renren.modules.sys.service.SysConfigService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -57,7 +58,7 @@ public class KnowledgeContentController extends AbstractController {
     public R info(@PathVariable("id") Long id) {
         KnowledgeContentEntity knowledgeContentEntity = contentService.selectById(id);
 
-        //浏览数增加的操作；增加后同步到es中
+        //浏览数增加的操作；增加后同步到es中;影响性能先注释掉了
         contentService.addViewSum(id);
         return R.ok().put("knowledgeContent", knowledgeContentEntity);
     }

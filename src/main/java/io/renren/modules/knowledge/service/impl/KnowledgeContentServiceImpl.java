@@ -13,7 +13,9 @@ import io.renren.modules.knowledge.search.ISearchService;
 import io.renren.modules.knowledge.service.KnowledgeContentService;
 import io.renren.modules.knowledge.service.KnowledgeTypeService;
 import io.renren.modules.sys.service.ShiroService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -145,6 +147,7 @@ public class KnowledgeContentServiceImpl extends ServiceImpl<KnowledgeContentDao
 
     @Override
     public void addViewSum(Long id) {
+
         baseMapper.addViewSum(id);
         //更新es中的浏览数
         Long viewNum=this.selectById(id).getViewNum();

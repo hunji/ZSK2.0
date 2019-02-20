@@ -30,10 +30,7 @@ public class WebSocketEventListener {
     @Autowired
     private SysUserRoleService userRoleService;
     private Gson gson=new Gson();
-    /**
-     * TODO: 处理新增连接和关闭连接事件；对其他用户进行提醒
-     * @param event
-     */
+
     @EventListener
     public void handleConnectListener(SessionConnectedEvent event) {
         String userName = StompHeaderAccessor.wrap(event.getMessage()).getUser().getName();
@@ -42,7 +39,8 @@ public class WebSocketEventListener {
         // 有新用户连接后做两件事情：1.内存中增加实体；2.将消息通知给前台（admin通知给guest；guest通知给admin）
         boolean isAdded;
         boolean isGuest = false;
-        if(roleNames.contains(KNOWLEDGE_GUEST_ROEL_NAME)){
+        // 没有角色的认为是游客
+        if(WsUserRepository.isGuest(roleNames)){
             isAdded=WsUserRepository.guestUsers.add(userName);
             isGuest=true;
         }else{
@@ -64,7 +62,7 @@ public class WebSocketEventListener {
         List<String> roleNames = userRoleService.queryRoleByUserName(userName);
         boolean isDeleted;
         boolean isGuest = false;
-        if(roleNames.contains(KNOWLEDGE_GUEST_ROEL_NAME)){
+        if(WsUserRepository.isGuest(roleNames)){
             isDeleted=WsUserRepository.guestUsers.remove(userName);
             isGuest=true;
         }else{
